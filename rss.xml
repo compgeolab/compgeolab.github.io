@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xml:base="https://www.compgeolab.org" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>Computer-Oriented Geoscience Lab</title>
+<link>https://www.compgeolab.org</link>
+<description>Geophysical research powered by open-source software</description>
+<atom:link href="https://www.compgeolab.org/rss.xml" rel="self" type="application/rss+xml" />
+
+
+    <item>
+        <title>[News] (CLOSED) PhD studentship at the University of Liverpool</title>
+        <link>https://www.compgeolab.org/news/liverpool-phd-2021.html</link>
+        <guid>https://www.compgeolab.org/news/liverpool-phd-2021.html</guid>
+        <pubDate>Wed, 24 Mar 2021 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <blockquote>
+<p>Update (2021/05/20): This position is now closed.</p>
+</blockquote>
+<p>We have one open position for a fully funded 5-year PhD and graduate student
+assistant position at the University of Liverpool.</p>
+<p><strong>Applications are open until 21 April 2021.</strong></p>
+<p><strong>Open to UK applicants only.</strong></p>
+<p><strong>Apply here:</strong> <a href="https://www.liverpool.ac.uk/study/postgraduate-research/how-to-apply/">https://www.liverpool.ac.uk/study/postgraduate-research/how-to-apply/</a></p>
+<p><img alt="" src="/images/liverpool-phd-antarctica-2021.png" /></p>
+<h2 id="project-improving-estimates-of-antarctic-geothermal-heat-flow-from-geophysical-data">Project: Improving estimates of Antarctic geothermal heat flow from geophysical data</h2>
+<p>The flow of heat coming from the Earth's interior is an important parameter for
+how ice sheets flow and deform. It also plays a key role in determining how the
+Earth's crust rebounds upwards once ice mass is displaced, influencing our
+estimates of sea-level rise.
+Geophysicists can indirectly determine heat flow from the measurements of
+anomalies in the Earth's magnetic field due to magnetized rocks in the crust.
+These data allow us to estimate the depth at which magnetic minerals lose their
+magnetic properties, which happens at a particular temperature known as the
+Curie temperature.
+However, there are still some unknown factors about the limitations of this
+technique.</p>
+<p>The goals of this project are to:</p>
+<ol>
+<li>Quantify the effect of merging magnetic data from different surveys (needed
+   for continental-scale studies) due to changes in the Earth's magnetic field
+   and crustal magnetization.</li>
+<li>Produce an integrated magnetic data compilation for Antarctica that is less
+   dependent on the direction of the Earth's field using state-of-the-art
+   processing methods.</li>
+<li>Estimate the depth to the Curie isotherm in Antarctica using the newly
+   generated magnetic data.</li>
+</ol>
+<p>The magnetic data integration and Curie depth estimation will be done by
+adapting <a href="/publications/eql-gradient-boosted.html" title="Gradient-boosted equivalent sources">methods</a> and <a href="/software/" title="Software">software</a>
+recently developed by the research group and our international collaborators at
+the <a href="https://www.pinga-lab.org">PINGA lab</a> (for example,
+<a href="https://www.pinga-lab.org/papers/mag-amp-basement2020.html">Hidalgo-Gato et al., 2021</a>,
+and <a href="https://www.pinga-lab.org/papers/generalized-positivity.html">Reis et al., 2020</a>).
+By achieving these goals, we hope to quantify and reduce the uncertainty in the
+Curie isotherm depth estimates for Antarctica, which is a key parameter in
+determining geothermal heat flow in Antarctica.</p>
+<h2 id="the-supervisory-team">The supervisory team</h2>
+<p>You will be working with an international team of researchers:</p>
+<ul>
+<li><a href="/people/uieda.html" title="Leonardo Uieda">Leonardo Uieda</a> (me) as the primary advisor.</li>
+<li><a href="https://www.liverpool.ac.uk/environmental-sciences/staff/richard-holme/">Richard Holme</a>,
+  also from the University of Liverpool.</li>
+<li><a href="https://www.pinga-lab.org/people/oliveira-jr.html">Vanderlei Coelho Oliveira Jr.</a>
+  from the <a href="https://www.pinga-lab.org">PINGA lab</a> at the <a href="https://on.br">Observatório Nacional, Brazil</a>.</li>
+</ul>
+<h2 id="why-work-with-us">Why work with us</h2>
+<p>Through this PhD, you will acquire the mathematical and Python programming
+skills required to undertake the project. You will be trained to develop
+software in a collaborative environment using GitHub and the current best
+practices in research software engineering.</p>
+<p>The project will be conducted following the current established norms of
+open-science and reproducible research, with all outputs published on the
+<a href="https://github.com/compgeolab">group's GitHub page</a>.</p>
+<p>The project also has the potential to involve code contributions to the
+different open-source Python <a href="/software/" title="Software">software developed by the research
+group</a>, mainly <a href="https://www.fatiando.org">Fatiando a Terra</a>, leading
+to potential impact beyond standard scientific publications.</p>
+<h2 id="what-we-are-looking-for">What we are looking for</h2>
+<p>This position would suit someone with skills in (or who is willing to learn):</p>
+<ul>
+<li>Computer programming (any language)</li>
+<li>Mathematics (linear algebra and calculus)</li>
+<li>Numerical methods</li>
+</ul>
+<p>An ideal candidate would also be motivated, able to self-study, and interested
+in open-science practices and open-source software.</p>
+<h2 id="the-position">The position</h2>
+<p>This position is for a Graduate Teaching Assistant at 0.5 full-time employment
+(FTE) over a 5 year period.</p>
+<p>The role includes:</p>
+<ul>
+<li>Supporting the programme of practical exercises in physical geography,
+  geospatial data analysis (geographical information systems), earth surface
+  processes and dynamics, and environmental sciences.</li>
+<li>No less than 50% of your time for the pursuit of your PhD studies.</li>
+</ul>
+<p>This project is one of eight eligible for funding support through the
+recruitment of two GTAs within Geography &amp; Planning and Earth Sciences.
+The funding covers:</p>
+<ul>
+<li>Tuition fees.</li>
+<li>Research support budget £1000 per year.</li>
+<li>University Teacher Salary (£29,177 - £33,797 / year at 0.5 FTE pro rata)</li>
+</ul>
+<p>Applicants are encouraged to read the <a href="/manual/" title="Lab manual">lab manual</a> to familiarize
+themselves with the way we approach science, expectations, our code of conduct,
+etc.</p>
+<h2 id="applications">Applications</h2>
+<p><strong>Interested?</strong> Find out more about:</p>
+<ul>
+<li><a href="https://www.liverpool.ac.uk/study/postgraduate-research/studentships/antarctic-geothermal-heat-flow/">Project background and the PhD application</a></li>
+<li><a href="https://my.corehr.com/pls/ulivrecruit/erq_jobspec_version_4.display_form?p_company=1&amp;p_internal_external=E&amp;p_display_in_irish=N&amp;p_process_type=&amp;p_applicant_no=&amp;p_form_profile_detail=&amp;p_display_apply_ind=Y&amp;p_refresh_search=Y&amp;p_recruitment_id=026106">GTA job description</a></li>
+</ul>
+<p><strong>To apply for this opportunity:</strong></p>
+<ol>
+<li><a href="https://www.liverpool.ac.uk/study/postgraduate-research/how-to-apply/">Apply for the PhD program</a>
+   (make sure that you mark "GTA SoES Post" in the funding section of the application form)</li>
+<li><a href="https://my.corehr.com/pls/ulivrecruit/erq_jobspec_version_4.display_form?p_company=1&amp;p_internal_external=E&amp;p_display_in_irish=N&amp;p_process_type=&amp;p_applicant_no=&amp;p_form_profile_detail=&amp;p_display_apply_ind=Y&amp;p_refresh_search=Y&amp;p_recruitment_id=026106">Apply for the 0.5 FTE GTA position</a></li>
+</ol>
+<p>You <strong>have to apply for both</strong> positions and make sure both are marked as "GTA
+SoES Post".</p>
+<p>If have any questions, please <a href="/people/uieda.html" title="Leonardo Uieda">get in touch</a>!</p>
+
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[News] Free online workshop on gravity data processing at Transform 2021</title>
+        <link>https://www.compgeolab.org/news/transform2021.html</link>
+        <guid>https://www.compgeolab.org/news/transform2021.html</guid>
+        <pubDate>Tue, 23 Mar 2021 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <p>The 2021 edition of the
+<a href="https://softwareunderground.org/events/transform-2021">Transform virtual conference</a>
+is happening in 16-23 April 2021!
+This year, <a href="/people/santisoler.html" title="Santiago R. Soler">Santiago</a>, Agustina Pesce, and Andrea Balza
+Morales are teaching workshop on gravity data processing in Python with our
+open-source libraries <a href="https://www.fatiando.org/harmonica/">Harmonica</a> and
+<a href="https://www.fatiando.org/boule/">Boule</a>.</p>
+<p>Register for free (though donations are welcome) at:
+<a href="https://softwareunderground.org/events/transform-2021">https://softwareunderground.org/events/transform-2021</a></p>
+<p>Join us on the <a href="https://softwareunderground.org/">Software Underground</a> slack
+for discussions and support during the tutorial. There are many more tutorials
+to choose from, a hackathon, unsessions, and more!</p>
+<p>Can't wait? Watch is the <a href="https://www.youtube.com/watch?v=-xZdNdvzm3E">Verde tutorial from
+Transform 2020</a> in the meantime:</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-xZdNdvzm3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[Publications] Gradient-boosted equivalent sources</title>
+        <link>https://www.compgeolab.org/publications/eql-gradient-boosted.html</link>
+        <guid>https://www.compgeolab.org/publications/eql-gradient-boosted.html</guid>
+        <pubDate>Mon, 25 Jan 2021 12:00:00 GMT</pubDate>
+        <dc:creator>Santiago R. Soler, Leonardo Uieda</dc:creator>
+        <description><![CDATA[
+
+            <p>This is a preprint which has
+            <strong>not</strong> yet been peer-reviewed.</p>
+
+            <h2 id="about">About</h2>
+<p>This paper describes how we used the gradient-boosting machine learning method
+to scale equivalent source processing to millions gravity and magnetic data.
+Equivalent sources allow us take into account the observation height and the
+physics of potential fields (mainly, they are harmonic functions) when
+processing and interpolation, which are often ignored by other methods.
+This leads to great results but it's involves large linear models, so
+processing datasets of this magnitude is tricky.
+By using gradient-boosting to fit the model in small chunks, we can process
+millions of data even on a modest laptop (and in a reasonable amount of time).</p>
+<p>This research was done entirely with <a href="/software/" title="Software">open-source software</a> and
+<a href="/data/" title="Data &amp; Models">open data</a>! This means that anyone should be able to fully reproduce
+our results using the information in the paper and the material in the
+associated GitHub repository.</p>
+<p>This is the final part of <a href="/people/santisoler.html" title="Santiago R. Soler">Santiago's</a> PhD thesis.</p>
+<p><img alt="Visual abstract for the paper: How can we interpolate over 1 million
+gravity/magnetic data at variable heights? By adapting the gradient-boosting
+method from machine learning to equivalent source processing. Includes a
+diagram of the algorithm and an interpolation example showing that the method
+is able to fit large amounts of data and still retain spectral content of the
+data." src="https://github.com/compgeolab/eql-gradient-boosted/raw/2c5f85752bc23b720d80c01243734c61e5f31249/presentations/visual-abstract/visual-abstract.jpg" /></p>
+<h2 id="abstract">Abstract</h2>
+<p>The equivalent source technique is a powerful and widely used method for
+processing gravity and magnetic data. Nevertheless, its major drawback is the
+large computational cost in terms of processing time and computer memory. We
+present two techniques for reducing the computational cost of equivalent source
+processing: block-averaging source locations and the gradient-boosted
+equivalent source algorithm. Through block-averaging, we reduce the number of
+source coefficients that must be estimated while retaining the minimum desired
+resolution in the final processed data. With the gradient boosting method, we
+estimate the sources coefficients in small batches along overlapping windows,
+allowing us to reduce the computer memory requirements arbitrarily to conform
+to the constraints of the available hardware. We show that the combination of
+block-averaging and gradient-boosted equivalent sources is capable of producing
+accurate interpolations through tests against synthetic data. Moreover, we
+demonstrate the feasibility of our method by gridding a gravity dataset
+covering Australia with over 1.7 million observations using a modest personal
+computer.</p>
+
+                <h2>Info</h2>
+                <ul class=""><li>
+                
+                Preprint server: <em>EarthArXiv</em>
+            </li><li>
+                
+                Source code: <a target="_blank" href="https://github.com/compgeolab/eql-gradient-boosted">compgeolab/eql-gradient-boosted</a>
+            </li><li>
+                
+                Data/Supplement: <a target="_blank" href="https://doi.org/10.6084/m9.figshare.13604360">10.6084/m9.figshare.13604360</a>
+            </li><li>
+                
+                PDF (preprint): <a target="_blank" href="https://doi.org/10.31223/X58G7C">10.31223/X58G7C</a>
+            </li><li>
+                
+                    <div class="tag-list">
+        <ul><li><span class=""><a href="/tag/data-processing">data-processing</a></span></li><li><span class=""><a href="/tag/gravity">gravity</a></span></li><li><span class=""><a href="/tag/open-source">open-source</a></span></li></ul>
+    </div>
+            </li></ul>
+                <h2>Citation</h2>
+                <p>Soler, S., & Uieda, L. (2021). Gradient-boosted equivalent sources. EarthArXiv. doi:10.31223/x58g7c</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[News] Farewell to Steven, Charlie, Lottie, and Alex</title>
+        <link>https://www.compgeolab.org/news/graduation2020.html</link>
+        <guid>https://www.compgeolab.org/news/graduation2020.html</guid>
+        <pubDate>Thu, 23 Jul 2020 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <p>This month, lab members <a href="/people/lcooper.html" title="Lottie Cooper">Lottie Cooper</a>, <a href="/people/sheer.html" title="Steven Heer">Steven Heer</a>, <a href="/people/aborges.html" title="Alexander Borges">Alexander Borges</a>,
+and <a href="/people/cthomson.html" title="Charles Thomson">Charles Thomson</a> have successfully finished their dissertations and have
+all graduated from the University of Liverpool! 🎉 🎊
+All four have received high marks for their work and Steven received an award
+for his dissertation.</p>
+<p>I'm, of course, extremely proud of them all. It was a pleasure to get to know
+them throughout the year and I've learned a lot along the way.
+Their arrival is what motivated the creation of the <a href="/manual/" title="Lab manual">lab manual</a> and
+their work is providing a model for a
+<a href="https://github.com/compgeolab/dissertation-template">dissertation template</a>
+that will facilitate the on-boarding of new members in the 2020/21 cohort.</p>
+<p><strong>Please join me in wishing the new geophysicists all the best in their future
+careers and lives in general!</strong> 🥂</p>
+
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[News] Free online workshops at Transform 2020</title>
+        <link>https://www.compgeolab.org/news/transform2020.html</link>
+        <guid>https://www.compgeolab.org/news/transform2020.html</guid>
+        <pubDate>Fri, 05 Jun 2020 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <p>The <a href="https://softwareunderground.org/">Software Underground</a> is organizing a
+massive free online event next week:
+<a href="https://transform2020.sched.com/">Transform2020 Virtual Conference on digital subsurface</a>.</p>
+<p><a href="https://transform2020.sched.com/"><img alt="Transform2020 Virtual Conference on digital subsurface" src="../images/transform2020.jpg" /></a></p>
+<p><a href="/people/uieda.html" title="Leonardo Uieda">Leo</a> and <a href="/people/santisoler.html" title="Santiago R. Soler">Santiago</a> will be teaching the
+tutorial
+"<a href="https://transform2020.sched.com/event/c7KE/tutorial-from-scattered-data-to-gridded-products-using-verde">From scattered data to gridded products using Verde</a>".
+The session will be <a href="https://www.youtube.com/watch?v=-xZdNdvzm3E">live-streamed to
+YouTube</a> and will still be
+available after the event:</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-xZdNdvzm3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p>There will be many other interesting tutorials, discussions, and lightning
+talks. You can register and browse the schedule on the
+<a href="https://transform2020.sched.com">Transform2020 Sched page</a>.</p>
+
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[News] Lab presentations at EGU 2020</title>
+        <link>https://www.compgeolab.org/news/egu2020.html</link>
+        <guid>https://www.compgeolab.org/news/egu2020.html</guid>
+        <pubDate>Wed, 06 May 2020 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <p>This week, the <a href="https://www.egu2020.eu/">EGU 2020 General Assembly</a> has been
+happening online for the first time. Instead of the traditional presentations,
+authors were asked to submit slides/videos/posters and then participated on a
+live chat room to pitch their projects and answer questions from the audience.</p>
+<p>Both <a href="/people/uieda.html" title="Leonardo Uieda">Leo</a> and <a href="/people/santisoler.html" title="Santiago R. Soler">Santiago</a> had presentations
+in session <a href="https://meetingorganizer.copernicus.org/EGU2020/displays/35332">G4.3: Acquisition and processing of gravity and magnetic field data
+and their integrative
+interpretation</a>.
+You can view their abstracts and slides as well as leave comments on the
+conference website until the end of May 2020.
+In case the slides are no longer available through EGU, they have also been
+uploaded to <a href="https://figshare.com/">figshare</a> (see links below).</p>
+<p>Both presentations investigate improvements to equivalent layer/source
+processing, which is a powerful technique to process and grid gravity and
+magnetic data. The improvements are being directly implemented in the Python
+software <a href="/publications/verde.html" title="Verde: Processing and gridding spatial data using Green's functions">Verde</a> and
+<a href="https://www.fatiando.org/harmonica">Harmonica</a>.</p>
+<h2 id="a-better-strategy-for-interpolating-gravity-and-magnetic-data">A better strategy for interpolating gravity and magnetic data</h2>
+<blockquote>
+<p>We present a new strategy for gravity and magnetic data interpolation and
+processing. Our method is based on the equivalent layer technique (EQL) and
+produces more accurate interpolations when compared with similar EQL methods.
+It also reduces the computation time and memory requirements, both of which
+have been severe limiting factors.</p>
+</blockquote>
+<ul>
+<li>EGU abstract and slides | doi:<a href="https://doi.org/10.5194/egusphere-egu2020-549">10.5194/egusphere-egu2020-549</a></li>
+<li>figshare | doi:<a href="https://doi.org/10.6084/m9.figshare.12217973">10.6084/m9.figshare.12217973</a></li>
+</ul>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://widgets.figshare.com/articles/12217973/embed?show_title=0" width="960" height="569" allowfullscreen="true" frameborder="0"></iframe>
+</div>
+
+<h2 id="evaluating-the-accuracy-of-equivalent-source-predictions-using-cross-validation">Evaluating the accuracy of equivalent-source predictions using cross-validation</h2>
+<blockquote>
+<p>We investigate the use of cross-validation (CV) techniques to estimate the
+accuracy of equivalent-source (also known as equivalent-layer) models for
+interpolation and processing of potential-field data. Our preliminary results
+indicate that some common CV algorithms (e.g., random permutations and
+k-folds) tend to overestimate the accuracy. We have found that blocked CV
+methods, where the data are split along spatial blocks instead of randomly,
+provide more conservative and realistic accuracy estimates. Beyond evaluating
+an equivalent-source model's performance, cross-validation can be used to
+automatically determine configuration parameters, like source depth and
+amount of regularization, that maximize prediction accuracy and avoid
+over-fitting.</p>
+</blockquote>
+<ul>
+<li>EGU abstract and slides | doi:<a href="https://doi.org/10.5194/egusphere-egu2020-15729">10.5194/egusphere-egu2020-15729</a></li>
+<li>figshare | doi:<a href="https://doi.org/10.6084/m9.figshare.12245372">10.6084/m9.figshare.12245372</a></li>
+</ul>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://widgets.figshare.com/articles/12245372/embed?show_title=0" width="960" height="569" allowfullscreen="true" frameborder="0"></iframe>
+</div>
+
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[News] Leo has been awarded a Software Sustainability Institute Fellowship</title>
+        <link>https://www.compgeolab.org/news/ssi-fellowship.html</link>
+        <guid>https://www.compgeolab.org/news/ssi-fellowship.html</guid>
+        <pubDate>Thu, 23 Jan 2020 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <p>The <a href="https://www.software.ac.uk/">Software Sustainability Institute</a> offers
+yearly fellowships to fund the organization of communities around scientific
+software (creating of local user groups, workshops, hackathons, etc).
+Earlier this month, Leo was selected to be part of the
+<a href="https://software.ac.uk/blog/2020-01-10-announcing-2020-software-sustainability-institute-fellows">2020 cohort of SSI Fellows</a>.</p>
+<p>Read more about what this means and his plans for the fellowship in this blog
+post:
+<a href="https://www.leouieda.com/blog/ssi-fellowship.html">Advancing research software in the UK through an SSI fellowship</a>.</p>
+
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[Publications] Pooch: A friend to fetch your data files</title>
+        <link>https://www.compgeolab.org/publications/pooch.html</link>
+        <guid>https://www.compgeolab.org/publications/pooch.html</guid>
+        <pubDate>Fri, 17 Jan 2020 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda, Santiago R. Soler, Rémi Rampin, Hugo van Kemenade, Matthew Turk, Daniel Shapero, Anderson Banihirwe, John Leeman</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <h2 id="about">About</h2>
+<p>This paper marks the release of <a href="http://www.fatiando.org/pooch">Pooch</a> v0.7.1,
+a Python library for downloading and managing data files.
+Pooch is a part of the new ecosystem of packages in
+<a href="https://www.fatiando.org">Fatiando a Terra</a>.
+It's used by most of the other packages to manage the sample data files used
+for testing and documentation.</p>
+<p>The peer-review at JOSS is open and can be found at
+<a href="https://github.com/openjournals/joss-reviews/issues/1943">openjournals/joss-reviews#1943</a>.</p>
+<h2 id="abstract">Abstract</h2>
+<p>Scientific software is usually created to acquire, analyze, model, and
+visualize data. As such, many software libraries include sample datasets in
+their distributions for use in documentation, tests, benchmarks, and workshops.
+A common approach is to include smaller datasets in the GitHub repository
+directly and package them with the source and binary distributions (e.g.,
+scikit-learn and scikit-image do this). As data files increase in size, it
+becomes unfeasible to store them in GitHub repositories. Thus, larger datasets
+require writing code to download the files from a remote server to the user's
+computer. The same problem is faced by scientists using version control to
+manage their research projects. While downloading a data file over HTTPS can be
+done easily with modern Python libraries, it is not trivial to manage a set of
+files, keep them updated, and check for corruption. For example, scikit-learn,
+Cartopy, and PyVista all include code dedicated to this particular task.
+Instead of scientists and library authors recreating the same code, it would be
+best to have a minimalistic and easy to set up tool for fetching and
+maintaining data files.</p>
+<p>Pooch is a Python library that fills this gap. It manages a data <em>registry</em>
+(containing file names, SHA-256 cryptographic hashes, and download URLs) by
+downloading files from one or more remote servers and storing them in a local
+data cache. Pooch is written in pure Python and has minimal dependencies. It
+can be easily installed from the Python Package Index (PyPI) and conda-forge on
+a wide range of Python versions: 2.7 (up to Pooch 0.6.0) and from 3.5 to 3.8.</p>
+
+                <h2>Info</h2>
+                <ul class=""><li>
+                
+                Open-Access
+            </li><li>
+                
+                Journal: <em>Journal of Open Source Software</em>
+            </li><li>
+                
+                Source code: <a target="_blank" href="https://github.com/fatiando/pooch">fatiando/pooch</a>
+            </li><li>
+                
+                doi: <a target="_blank" href="https://doi.org/10.21105/joss.01943">10.21105/joss.01943</a>
+            </li><li>
+                
+                    <div class="tag-list">
+        <ul><li><span class=""><a href="/tag/fatiando">fatiando</a></span></li><li><span class=""><a href="/tag/open-source">open-source</a></span></li></ul>
+    </div>
+            </li></ul>
+                <h2>Citation</h2>
+                <p>Uieda, L., Soler, S.R., Rampin, R., van Kemenade, H., Turk, M., Shapero, D., Banihirwe, A., and Leeman, J. (2020). Pooch: A friend to fetch your data files. Journal of Open Source Software, 5(45), 1943. doi:10.21105/joss.01943</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[News] (CLOSED) Two PhD studentships at the University of Liverpool</title>
+        <link>https://www.compgeolab.org/news/liverpool-phd-2020.html</link>
+        <guid>https://www.compgeolab.org/news/liverpool-phd-2020.html</guid>
+        <pubDate>Sun, 08 Dec 2019 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <blockquote>
+<p><strong>Update (2020/01/10):</strong> This position is now closed.</p>
+</blockquote>
+<p>I have two open positions for funded studentships at the University of
+Liverpool.
+<strong>Applications are open until 10 January 2020</strong>.</p>
+<h2 id="project-descriptions">Project descriptions</h2>
+<blockquote>
+<p>Follow the links for more detailed versions.</p>
+</blockquote>
+<p><a href="https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/phd-studentships/bringingmachinelearningtechniquestogeophysicaldataprocessing.html"><strong>Bringing machine learning techniques to geophysical data processing</strong></a></p>
+<p>The goal of this project is to investigate the use of existing machine learning
+techniques to process gravity and magnetics data using the Equivalent Layer
+Method. The methods and software developed during this project can be applied
+to process large amounts of gravity and magnetics data, including airborne and
+satellite surveys, and produce data products that can enable further scientific
+investigations. Examples of such data products include global gravity gradient
+grids from GOCE satellite measurements, regional magnetic grids for the UK,
+gravity grids for the Moon and Mars, etc.</p>
+<p><a href="https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/phd-studentships/large-scalemappingofthethicknessofthecrustfromsatellitegravityandgra.html"><strong>Large-scale mapping of the thickness of the crust from satellite gravity and gravity gradient data</strong></a></p>
+<p>The goal of this project is to develop improved inversion methods to determine
+crustal thickness from gravity and gravity gradient data, in particular
+<a href="/publications/moho-tesseroid-inversion.html" title="Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho">Uieda and Barbosa (2017)</a>.
+Main objectives are: (1) account for density variation in the oceanic
+lithosphere due to temperature; (2) incorporate seismological estimates of
+crustal thickness in the inversion process; (3) estimate the density contrast
+across the crust-mantle interface in different domains; (4) joint inversion of
+gravity and gravity gradient data; (5) develop techniques to reduce the
+computational load of the inversion; (6) quantify uncertainty due to errors in
+regional crustal and sedimentary basin models. The inversion methods developed
+in this project can be applied to produce improved crustal thickness estimates
+for South America, Africa, Antarctica, the Moon, Mars, etc.</p>
+<h2 id="the-details">The details</h2>
+<p>The funding for these projects comes from the School of Environment Sciences.
+Applicants choose a project when applying and will be judged on their own merit
+(not the project/supervisor).
+There are only a small number of studentships available for the entire School,
+so competition for the studentships tends to be high.
+Sadly, applications are limited to UK and EU citizens.
+Candidates who are able to self-fund (e.g., through their employer) are
+encouraged to apply as well. In this case, there is no need to go through the
+normal competition.</p>
+<p>Both projects have a large computational component. Students will make code
+contributions to the different <a href="/software/" title="Software">open-source Python software developed by the
+lab</a>.
+They will be trained to develop software in a collaborative environment using
+GitHub and use the current best practices in software engineering and
+reproducible research.</p>
+<p>Applicants are encouraged to read the <a href="/manual/" title="Lab manual">lab manual</a> to familiarize
+themselves with the way we approach science, expectations, our code of conduct,
+etc.</p>
+<p><strong>If you're interested in applying (or know someone who might be), please
+<a href="/people/uieda.html" title="Leonardo Uieda">get in touch</a>!</strong></p>
+
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[News] Introducing the Computer-Oriented Geoscience Lab</title>
+        <link>https://www.compgeolab.org/news/introduction.html</link>
+        <guid>https://www.compgeolab.org/news/introduction.html</guid>
+        <pubDate>Mon, 19 Aug 2019 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <p>In August 2019, I started a new position as Lecturer in Geophysics at the
+<a href="https://www.liverpool.ac.uk/earth-ocean-and-ecological-sciences/">University of Liverpool</a>.
+As part of this transition, I've had to think about my research in a broader context and
+analyse what sets it apart.
+Since <a href="/publications/" title="Publications">the lab's research</a> will mainly focus on method development,
+the range of actual scientific applications that we could potentially work on is broad.
+Unfortunately, this makes coming up with a lab name rather difficult.</p>
+<p>The constant thing throughout my career has been the fact that "computational thinking"
+is at the heart of everything I do:
+from <a href="/publications/planting-inversion.html" title="Robust 3D gravity gradient inversion by planting anomalous densities">potential-field inversion</a> to
+<a href="/publications/tesseroids.html" title="Tesseroids: forward modeling gravitational fields in spherical coordinates">forward modeling</a>.
+After much brainstorming, <em>"Computer-Oriented Geoscience"</em> seems to accurately describe
+the type of research we do here:
+<strong>we apply computational methods to solve problems in geoscience</strong>.</p>
+<p>As a direct consequence, we also develop and maintain
+<a href="/software/" title="Software">several open-source projects</a> that supports our research and implement the
+methods that we develop.
+Our language of choice is Python and we have years of expertise in modern and
+collaborative software development.
+We are a <a href="/people/" title="People">small group</a> at the moment (only 2 members) but I'm hoping to grow
+with time.</p>
+<p>This website serves as a <a href="/research/" title="Research">portfolio of our research</a> and also as a guide for
+members and collaborators.
+We are strong believers that the scientific process needs to be more open,
+collaborative, reproducible, and inclusive.
+As such, we have high expectations not only for the results of our work, but also for
+how it is done.
+Our <a href="/manual/" title="Lab manual">lab manual</a> provides detailed information, like our code of conduct and
+what collaborators can expect from us (and what we expect from them).
+The manual is based on the excellent <a href="http://labcarpentry.org/">Lab Carpentry</a>
+blueprints.</p>
+<p>We are eager to establish collaborations with applied scientists who have interesting
+problems that could benefit from our computational and numerical modeling skills.
+<a href="/people/uieda.html" title="Leonardo Uieda">Get in touch</a> if that sounds like you!</p>
+
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[Publications] Gravitational field calculation in spherical coordinates using variable densities in depth</title>
+        <link>https://www.compgeolab.org/publications/tesseroid-variable-density.html</link>
+        <guid>https://www.compgeolab.org/publications/tesseroid-variable-density.html</guid>
+        <pubDate>Tue, 11 Jun 2019 12:00:00 GMT</pubDate>
+        <dc:creator>Santiago R. Soler, Agustina Pesce, Mario E. Gimenez, Leonardo Uieda</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <h2 id="about">About</h2>
+<p>This paper builds upon <a href="/publications/tesseroids.html" title="Tesseroids: forward modeling gravitational fields in spherical coordinates">our work on Tesseroids</a> and
+extends the methodology to work for depth-variable densities. Santiago led this
+project, did most of the work and a large part of the writing of the paper.</p>
+<p><img alt="Application of the methodology to the Neuquén Basin, Argentina." src="/images/tesseroid-variable-density-results.jpg" />
+<em>Figure: Application of the methodology to the Neuquén Basin, a foreland basin in the
+southern Andes. (a) Topography of the Neuquén Basin and its location in South America.
+(b) Thickness of the sedimentary basin. Inset shows the exponential density profile used
+in the modeling. (c) Resulting vertical gravitational acceleration at 10 km height
+modeled by tesseroids with exponential density variation in depth. (d) Difference
+between gravitational acceleration modeled using the exponential density profile and a
+homogeneous density.</em></p>
+<h2 id="abstract">Abstract</h2>
+<p>We present a new methodology to compute the gravitational fields generated by tesseroids
+(spherical prisms) whose density varies with depth according to an arbitrary continuous
+function. It approximates the gravitational fields through the Gauss-Legendre Quadrature
+along with two discretization algorithms that automatically control its accuracy by
+adaptively dividing the tesseroid into smaller ones. The first one is a preexisting two
+dimensional adaptive discretization algorithm that reduces the errors due to the
+distance between the tesseroid and the computation point. The second is a new
+density-based discretization algorithm that decreases the errors introduced by the
+variation of the density function with depth. The amount of divisions made by each
+algorithm is indirectly controlled by two parameters: the distance-size ratio and the
+delta ratio. We have obtained analytical solutions for a spherical shell with radially
+variable density and compared them to the results of the numerical model for linear,
+exponential, and sinusoidal density functions. These comparisons allowed us to obtain
+optimal values for the distance-size and delta ratios that yield an accuracy of 0.1% of
+the analytical solutions. The resulting optimal values of distance-size ratio for the
+gravitational potential and its gradient are 1 and 2.5, respectively. The density-based
+discretization algorithm produces no discretizations in the linear density case, but a
+delta ratio of 0.1 is needed for the exponential and the sinusoidal density functions.
+These values can be extrapolated to cover most common use cases. However, the
+distance-size and delta ratios can be configured by the user to increase the accuracy of
+the results at the expense of computational speed. Lastly, we apply this new methodology
+to model the Neuquén Basin, a foreland basin in Argentina with a maximum depth of over
+5000 m, using an exponential density function.</p>
+
+                <h2>Info</h2>
+                <ul class=""><li>
+                
+                Journal: <em>Geophysical Journal International</em>
+            </li><li>
+                
+                Source code: <a target="_blank" href="https://github.com/pinga-lab/tesseroid-variable-density">pinga-lab/tesseroid-variable-density</a>
+            </li><li>
+                
+                Data/Supplement: <a target="_blank" href="https://doi.org/10.6084/m9.figshare.8239622">10.6084/m9.figshare.8239622</a>
+            </li><li>
+                
+                PDF (preprint): <a target="_blank" href="https://doi.org/10.31223/osf.io/3548g">10.31223/osf.io/3548g</a>
+            </li><li>
+                
+                doi: <a target="_blank" href="https://doi.org/10.1093/gji/ggz277">10.1093/gji/ggz277</a>
+            </li><li>
+                
+                    <div class="tag-list">
+        <ul><li><span class=""><a href="/tag/gravity">gravity</a></span></li><li><span class=""><a href="/tag/tesseroids">tesseroids</a></span></li><li><span class=""><a href="/tag/forward-modeling">forward-modeling</a></span></li></ul>
+    </div>
+            </li></ul>
+                <h2>Citation</h2>
+                <p>Soler, S. R., Pesce, A., Gimenez, M. E., & Uieda, L., 2019. Gravitational field calculation in spherical coordinates using variable densities in depth, Geophysical Journal International, doi:10.1093/gji/ggz277</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[Publications] Verde: Processing and gridding spatial data using Green's functions</title>
+        <link>https://www.compgeolab.org/publications/verde.html</link>
+        <guid>https://www.compgeolab.org/publications/verde.html</guid>
+        <pubDate>Thu, 11 Oct 2018 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <h2 id="about">About</h2>
+<p>This paper marks the first release of <a href="https://www.fatiando.org/verde">Verde</a>, a Python
+library for processing and gridding spatial data. Verde is the first part of a
+<a href="https://www.leouieda.com/blog/future-of-fatiando.html">large-scale refactoring of the Fatiando a Terra project</a>
+into separate packages.</p>
+<p>The peer-review at JOSS is open and can be found at
+<a href="https://github.com/openjournals/joss-reviews/issues/957">openjournals/joss-reviews#957</a>.</p>
+<p><img alt="Example of using verde.BlockMean with data uncertainties." src="/images/block-mean-example.jpg" />
+<br>
+<em>Figure: Example of using <code>verde.BlockMean</code> to calculate weighted means in spatial
+blocks assuming different uncertainty models. Full source code to produce this image is
+available in the <a href="https://www.fatiando.org/verde/v1.2.0/gallery/blockreduce_weights_mean.html">Verde example
+gallery</a>.</em></p>
+<h2 id="abstract">Abstract</h2>
+<p><em>Verde</em> is a Python library for gridding spatial data using different Green's functions.
+It differs from the radial basis functions in <code>scipy.interpolate</code> by providing an API
+inspired by scikit-learn. The <em>Verde</em> API should be familiar to scikit-learn users but
+is tweaked to work with spatial data, which has Cartesian or geographic coordinates and
+multiple data components instead of an <code>X</code> feature matrix and <code>y</code> label vector. The
+library also includes more specialized Green's functions, utilities for trend estimation
+and data decimation (which are often required prior to gridding), and more. Some of
+these interpolation and data processing methods already exist in the Generic Mapping
+Tools (GMT), a command-line program popular in the Earth Sciences. However, there are no
+model selection tools in GMT and it can be difficult to separate parts of the processing
+that are done internally by its modules. <em>Verde</em> is designed to be modular, easily
+extended, and integrated into the scientific Python ecosystem. It can be used to
+implement new interpolation methods by subclassing the <code>verde.base.BaseGridder</code> class,
+requiring only the implementation of the new Green's function. For example, it is
+currently being used to develop a method for interpolation of 3-component GPS data.</p>
+
+                <h2>Info</h2>
+                <ul class=""><li>
+                
+                Open-Access
+            </li><li>
+                
+                Journal: <em>Journal of Open Source Software</em>
+            </li><li>
+                
+                Source code: <a target="_blank" href="https://github.com/fatiando/verde">fatiando/verde</a>
+            </li><li>
+                
+                doi: <a target="_blank" href="https://doi.org/10.21105/joss.00957">10.21105/joss.00957</a>
+            </li><li>
+                
+                    <div class="tag-list">
+        <ul><li><span class=""><a href="/tag/fatiando">fatiando</a></span></li><li><span class=""><a href="/tag/open-source">open-source</a></span></li><li><span class=""><a href="/tag/data-processing">data-processing</a></span></li></ul>
+    </div>
+            </li></ul>
+                <h2>Citation</h2>
+                <p>Uieda, L. (2018). Verde: Processing and gridding spatial data using Green's functions. Journal of Open Source Software, 3(30), 957. doi:10.21105/joss.00957</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[Publications] Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho</title>
+        <link>https://www.compgeolab.org/publications/moho-tesseroid-inversion.html</link>
+        <guid>https://www.compgeolab.org/publications/moho-tesseroid-inversion.html</guid>
+        <pubDate>Sun, 01 Jan 2017 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda, Valéria C. F. Barbosa</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <h2 id="about">About</h2>
+<p>This paper presents a new gravity inversion method to estimate the depth of the
+crust-mantle interface (the Moho).
+The inversion uses a spherical Earth approximation by discretizing the Earth
+into tesseroids (spherical prisms).
+The forward modeling method used is described in the <a href="/publications/tesseroids.html" title="Tesseroids: forward modeling gravitational fields in spherical coordinates">Tesseroids paper</a>.
+We applied the inversion to estimate the Moho depth for South America.</p>
+<p>The main result from this publication is the gravity-derived Moho depth model
+for South America and the differences between it and seismological estimates
+of <a href="https://doi.org/10.1016/j.tecto.2012.11.014">Assumpção et al. (2013)</a>.
+These differences allow us to know where the gravity-derived model can be trusted and where there might be unaccounted sources in the gravity data.</p>
+<p>You can <strong>download</strong> the model results, source code, and input data from
+doi:<a href="https://doi.org/10.6084/m9.figshare.3987267">10.6084/m9.figshare.3987267</a></p>
+<p><img alt="The estimated Moho depth for South America and differences with seismological estimates." src="/images/south-american-moho.jpg" />
+<br>
+<em>Figure: Estimated depth to the crust-mantle interface (Moho) from satellite
+measurements of gravity disturbances. Dotted lines represent the boundaries between
+major geologic provinces. AD: Andean Province, AFB: Andean foreland basins, AM: Amazonas
+Basin, BR: Brazilian Shield, BO: Borborema province, CH: Chaco Basin, GB: Guyana Basin,
+GU: Guyana Shield, PB: Parnaíba Basin, PC: Parecis Basin, PR: Paraná Basin, PT:
+Patagonia province, SF: São Francisco Craton, SM: Solimões Basin.  Solid orange lines
+mark the limits of the main lithospheric plates. AF: Africa Plate, AN: Antarctica Plate,
+CA: Caribbean Plate, CO: Cocos Plate, SA: South America Plate, SC: Scotia Plate, NZ:
+Nazca Plate.  The solid light grey line is the 35 km Moho depth contour.</em></p>
+<h2 id="open-source-implementation">Open-source implementation</h2>
+<p>The inversion method proposed here is implemented in the Python programming
+language.
+The code uses the forward modeling and inversion packages of the
+<a href="https://www.fatiando.org/v0.5">Fatiando a Terra</a> library (version 0.5).</p>
+<p>You'll find the source code, input data, and instructions to produce the
+results from the paper on the Github repository. There should be enough
+information for you to produce all figures of the paper.</p>
+<h2 id="abstract">Abstract</h2>
+<p>Estimating the relief of the Moho from gravity data is a computationally
+intensive non-linear inverse problem.  What is more, the modeling must
+take the Earths curvature into account when the study area is of regional
+scale or greater.  We present a regularized non-linear gravity inversion
+method that has a low computational footprint and employs a spherical
+Earth approximation.  To achieve this, we combine the highly efficient
+Bott's method with smoothness regularization and a discretization of the
+anomalous Moho into tesseroids (spherical prisms).  The computational
+efficiency of our method is attained by harnessing the fact that all
+matrices involved are sparse.  The inversion results are controlled by
+three hyper-parameters: the regularization parameter, the anomalous Moho
+density-contrast, and the reference Moho depth.  We estimate the
+regularization parameter using the method of hold-out cross-validation.
+Additionally, we estimate the density-contrast and the reference depth
+using knowledge of the Moho depth at certain points.  We apply the
+proposed method to estimate the Moho depth for the South American
+continent using satellite gravity data and seismological data.  The final
+Moho model is in accordance with previous gravity-derived models and
+seismological data.  The misfit to the gravity and seismological data is
+worse in the Andes and best in oceanic areas, central Brazil and
+Patagonia, and along the Atlantic coast.  Similarly to previous results,
+the model suggests a thinner crust of 30-35 km under the Andean foreland
+basins.  Discrepancies with the seismological data are greatest in the
+Guyana Shield, the central Solimões and Amazonas Basins, the Paraná
+Basin, and the Borborema province.  These differences suggest the
+existence of crustal or mantle density anomalies that were unaccounted
+for during gravity data processing.</p>
+
+                <h2>Info</h2>
+                <ul class=""><li>
+                
+                Journal: <em>Geophysical Journal International</em>
+            </li><li>
+                
+                Source code: <a target="_blank" href="https://github.com/pinga-lab/paper-moho-inversion-tesseroids">pinga-lab/paper-moho-inversion-tesseroids</a>
+            </li><li>
+                
+                Data/Supplement: <a target="_blank" href="https://doi.org/10.6084/m9.figshare.3987267">10.6084/m9.figshare.3987267</a>
+            </li><li>
+                
+                PDF (preprint): <a target="_blank" href="https://doi.org/10.31223/osf.io/9ba4m">10.31223/osf.io/9ba4m</a>
+            </li><li>
+                
+                doi: <a target="_blank" href="https://doi.org/10.1093/gji/ggw390">10.1093/gji/ggw390</a>
+            </li><li>
+                
+                    <div class="tag-list">
+        <ul><li><span class=""><a href="/tag/inversion">inversion</a></span></li><li><span class=""><a href="/tag/gravity">gravity</a></span></li><li><span class=""><a href="/tag/tesseroids">tesseroids</a></span></li></ul>
+    </div>
+            </li></ul>
+                <h2>Citation</h2>
+                <p>Uieda, L., and V. C. F. Barbosa (2017), Fast nonlinear gravity inversion in spherical coordinates with application to the South American Moho, Geophys. J. Int., 208(1), 162-176, doi:10.1093/gji/ggw390.</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[Publications] Tesseroids: forward modeling gravitational fields in spherical coordinates</title>
+        <link>https://www.compgeolab.org/publications/tesseroids.html</link>
+        <guid>https://www.compgeolab.org/publications/tesseroids.html</guid>
+        <pubDate>Thu, 01 Sep 2016 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda, Valéria C. F. Barbosa, Carla Braitenberg</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <h2 id="about">About</h2>
+<p>This paper describes the algorithms used in version 1.2.0 of the open-source
+software <a href="http://www.tesseroids.org">Tesseroids</a>.
+The software is a suite of C coded command-line programs that calculate the
+gravitational field of a tesseroid (spherical prism) model.
+There is also a separate Python implementation of the same algorithm in the
+<code>fatiando.gravmag.tesseroid</code> module of the
+<a href="https://www.fatiando.org/v0.5">Fatiando a Terra</a> library (introduced in version 0.3)
+and in <a href="https://github.com/fatiando/harmonica">Harmonica</a>.</p>
+<p><img alt="Example of adaptive discretization of a tesseroid using different distance-size ratio." src="/images/tesseroid-adaptive-discretization.jpg" />
+<br>
+<em>Figure: Adaptive discretization of the tesseroid shown in panel (a) for a computation
+point P using the distance-size ratio D equal to (b) 1, (c) 2, and (d) 6. Lr, Lφ, and Lλ
+are the dimensions of the tesseroid. Note that increasing D results in a fine division
+of the tesseroid close the computation point and a coarser division further away.</em></p>
+<h2 id="abstract">Abstract</h2>
+<p>We present the open-source software Tesseroids, a set of command-line programs
+to perform the forward modeling of gravitational fields in spherical
+coordinates.  The software is implemented in the C programming language and
+uses tesseroids (spherical prisms) for the discretization of the subsurface
+mass distribution.  The gravitational fields of tesseroids are calculated
+numerically using the Gauss-Legendre Quadrature (GLQ).  We have improved upon
+an adaptive discretization algorithm to guarantee the accuracy of the GLQ
+integration.  Our implementation of adaptive discretization uses a "stack"
+based algorithm instead of recursion to achieve more control over execution
+errors and corner cases.  The algorithm is controlled by a scalar value called
+the distance-size ratio (D) that determines the accuracy of the integration as
+well as the computation time.  We determined optimal values of D for the
+gravitational potential, gravitational acceleration, and gravity gradient
+tensor by comparing the computed tesseroids effects with those of a homogeneous
+spherical shell.  The values required for a maximum relative error of 0.1% of
+the shell effects are D = 1 for the gravitational potential, D = 1.5 for the
+gravitational acceleration, and D = 8 for the gravity gradients.  Contrary to
+previous assumptions, our results show that the potential and its first and
+second derivatives require different values of D to achieve the same accuracy.
+These values were incorporated as defaults in the software.</p>
+
+                <h2>Info</h2>
+                <ul class=""><li>
+                
+                Journal: <em>Geophysics</em>
+            </li><li>
+                
+                Source code: <a target="_blank" href="https://github.com/pinga-lab/paper-tesseroids">pinga-lab/paper-tesseroids</a>
+            </li><li>
+                
+                PDF: <a target="_blank" href="/pdf/tesseroids.pdf">tesseroids.pdf</a>
+            </li><li>
+                
+                doi: <a target="_blank" href="https://doi.org/10.1190/geo2015-0204.1">10.1190/geo2015-0204.1</a>
+            </li><li>
+                
+                    <div class="tag-list">
+        <ul><li><span class=""><a href="/tag/tesseroids">tesseroids</a></span></li><li><span class=""><a href="/tag/gravity">gravity</a></span></li><li><span class=""><a href="/tag/open-source">open-source</a></span></li></ul>
+    </div>
+            </li></ul>
+                <h2>Citation</h2>
+                <p>Uieda, L., V. Barbosa, and C. Braitenberg (2016), Tesseroids: Forward-modeling gravitational fields in spherical coordinates, GEOPHYSICS, F41–F48, doi:10.1190/geo2015-0204.1.</p>
+
+        ]]></description>
+    </item>
+    <item>
+        <title>[Publications] Robust 3D gravity gradient inversion by planting anomalous densities</title>
+        <link>https://www.compgeolab.org/publications/planting-inversion.html</link>
+        <guid>https://www.compgeolab.org/publications/planting-inversion.html</guid>
+        <pubDate>Sun, 01 Jul 2012 12:00:00 GMT</pubDate>
+        <dc:creator>Leonardo Uieda, Valéria C. F. Barbosa</dc:creator>
+        <description><![CDATA[
+
+            
+
+            <h2 id="about">About</h2>
+<p>The inversion method proposed in this paper is implemented in the open-source
+<a href="https://www.fatiando.org/v0.5">Fatiando a Terra</a> Python library
+as the <code>fatiando.gravmag.harvester</code> module.
+The module was introduced in
+<a href="http://www.fatiando.org/changelog.html#version-0-1">version 0.1</a>
+of the library.</p>
+<h2 id="visualizing-the-algorithm">Visualizing the algorithm</h2>
+<p>The following is an animation of the growth algorithm
+during the inversion of synthetic data.
+The video is available at <a href="http://figshare.com/">figshare</a>:
+<a href="https://doi.org/10.6084/m9.figshare.91469">10.6084/m9.figshare.91469</a></p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://widgets.figshare.com/articles/91469/embed?show_title=0"
+width="568" height="426" frameborder="0"></iframe>
+</div>
+
+<h2 id="abstract">Abstract</h2>
+<p>We have developed a new gravity gradient inversion method for estimating a 3D
+density-contrast distribution defined on a grid of rectangular prisms. Our
+method consists of an iterative algorithm that does not require the solution of
+an equation system. Instead, the solution grows systematically around
+user-specified prismatic elements, called “seeds,” with given density
+contrasts. Each seed can be assigned a different density-contrast value,
+allowing the interpretation of multiple sources with different density
+contrasts and that produce interfering signals. In real world scenarios, some
+sources might not be targeted for the interpretation. Thus, we developed a
+robust procedure that neither requires the isolation of the signal of the
+targeted sources prior to the inversion nor requires substantial prior
+information about the non-targeted sources. In our iterative algorithm, the
+estimated sources grow by the accretion of prisms in the periphery of the
+current estimate. In addition, only the columns of the sensitivity matrix
+corresponding to the prisms in the periphery of the current estimate are needed
+for the computations. Therefore, the individual columns of the sensitivity
+matrix can be calculated on demand and deleted after an accretion takes place,
+greatly reducing the demand for computer memory and processing time. Tests on
+synthetic data show the ability of our method to correctly recover the geometry
+of the targeted sources, even when interfering signals produced by non-targeted
+sources are present. Inverting the data from an airborne gravity gradiometry
+survey flown over the iron ore province of Quadrilátero Ferrífero, southeastern
+Brazil, we estimated a compact iron ore body that is in agreement with geologic
+information and previous interpretations.</p>
+<p><img alt="3D visualization of estimate ore-body from the planting inversion of gravity gradient data." src="/images/quadrilatero-ferrifero-density-model.jpg" />
+<br>
+<em>Figure: Inversion results for data from the Quadrilátero Ferrífero, southeastern
+Brazil. Perspective views of the estimated density-contrast distribution, where prisms
+with zero density contrast are not shown or shown in gray and prisms with density
+contrast 1 g/cm³, corresponding to the iron ore body of the Cauê itabirite, are shown in
+solid or transparent red. The seeds used in the inversion are shown as black prisms.</em></p>
+
+                <h2>Info</h2>
+                <ul class=""><li>
+                
+                Journal: <em>Geophysics</em>
+            </li><li>
+                
+                Source code: <a target="_blank" href="https://github.com/pinga-lab/paper-planting-densities">pinga-lab/paper-planting-densities</a>
+            </li><li>
+                
+                Data/Supplement: <a target="_blank" href="https://doi.org/10.6084/m9.figshare.91574">10.6084/m9.figshare.91574</a>
+            </li><li>
+                
+                PDF: <a target="_blank" href="/pdf/planting-inversion.pdf">planting-inversion.pdf</a>
+            </li><li>
+                
+                doi: <a target="_blank" href="https://doi.org/10.1190/geo2011-0388.1">10.1190/geo2011-0388.1</a>
+            </li><li>
+                
+                    <div class="tag-list">
+        <ul><li><span class=""><a href="/tag/inversion">inversion</a></span></li><li><span class=""><a href="/tag/gravity">gravity</a></span></li></ul>
+    </div>
+            </li></ul>
+                <h2>Citation</h2>
+                <p>Uieda, L., and V. C. F. Barbosa (2012), Robust 3D gravity gradient inversion by planting anomalous densities, Geophysics, 77(4), G55-G66, doi:10.1190/geo2011-0388.1</p>
+
+        ]]></description>
+    </item>
+
+</channel>
+</rss>

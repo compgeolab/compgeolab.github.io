@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.compgeolab.org/images/twitter-card-image.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Lab presentations at EGU 2020">
+            <meta name="twitter:description" content="This week, the EGU 2020 General Assembly has been happening online for the first time. Instead of the traditional presentations, authors wer...">
+
+    <meta property="og:title" content="Lab presentations at EGU 2020">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.compgeolab.org/news/egu2020.html">
+    <meta property="og:site_name" content="Computer-Oriented Geoscience Lab">
+    <meta property="og:image" content="https://www.compgeolab.org/images/twitter-card-image.png">
+            <meta property="og:description" content="This week, the EGU 2020 General Assembly has been happening online for the first time. Instead of the traditional presentations, authors wer...">
+
+    <title>    Lab presentations at EGU 2020 | Computer-Oriented Geoscience Lab
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.compgeolab.org/rss.xml" title="Computer-Oriented Geoscience Lab">
+
+    <!-- Include Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,700%7COpen+Sans:400,600" rel="stylesheet">
+
+    <!--Include the Font Awesome and Academicons CSS-->
+    <link rel="stylesheet" href="/css/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+        <div class="banner"
+             style="background-image: linear-gradient(to top, transparent, #00000099), url(/images/banner/disturbance.jpg); background-position: center;">
+
+                <div class="container-fluid menu menu-transparent text-center">
+        <div class="col-lg-3 menu-brand">
+                <a href="/">
+                    <img src="/images/compgeolab-banner.svg" title="Computer-Oriented Geoscience Lab">
+                </a>
+        </div>
+        <div class="col-lg-6 menu-list">
+            <ul>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/software">Software</a></li>
+                    <li><a href="/data">Data</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/people">People</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 menu-list">
+            <ul>
+                    <li><a target="_blank" href="https://github.com/compgeolab"><i class="fa fa-github fa-lg" title="GitHub"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for news and papers"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+        </div>
+
+
+    <div class="container">
+
+
+    <h1 class="post-title">Lab presentations at EGU 2020</h1>
+
+    <div class="row">
+        <div class="col-md-8">
+            <ul class="fa-ul">
+                <li class="post-date">
+                    <i class="fa-li fa fa-calendar fa-fw" title="date"></i>
+                     06 May 2020
+                </li>
+                    <li>
+                        <i class="fa-li fa fa-users fa-fw" title="authors"></i>
+                        by
+                        <a href="/people/uieda.html">Leonardo Uieda</a>
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                            <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/meta">meta</a></span></li></ul>
+    </div>
+                    </li>
+            </ul>
+            <p>This week, the <a href="https://www.egu2020.eu/">EGU 2020 General Assembly</a> has been
+happening online for the first time. Instead of the traditional presentations,
+authors were asked to submit slides/videos/posters and then participated on a
+live chat room to pitch their projects and answer questions from the audience.</p>
+<p>Both <a href="/people/uieda.html" title="Leonardo Uieda">Leo</a> and <a href="/people/santisoler.html" title="Santiago R. Soler">Santiago</a> had presentations
+in session <a href="https://meetingorganizer.copernicus.org/EGU2020/displays/35332">G4.3: Acquisition and processing of gravity and magnetic field data
+and their integrative
+interpretation</a>.
+You can view their abstracts and slides as well as leave comments on the
+conference website until the end of May 2020.
+In case the slides are no longer available through EGU, they have also been
+uploaded to <a href="https://figshare.com/">figshare</a> (see links below).</p>
+<p>Both presentations investigate improvements to equivalent layer/source
+processing, which is a powerful technique to process and grid gravity and
+magnetic data. The improvements are being directly implemented in the Python
+software <a href="/publications/verde.html" title="Verde: Processing and gridding spatial data using Green's functions">Verde</a> and
+<a href="https://www.fatiando.org/harmonica">Harmonica</a>.</p>
+<h2 id="a-better-strategy-for-interpolating-gravity-and-magnetic-data">A better strategy for interpolating gravity and magnetic data</h2>
+<blockquote>
+<p>We present a new strategy for gravity and magnetic data interpolation and
+processing. Our method is based on the equivalent layer technique (EQL) and
+produces more accurate interpolations when compared with similar EQL methods.
+It also reduces the computation time and memory requirements, both of which
+have been severe limiting factors.</p>
+</blockquote>
+<ul>
+<li>EGU abstract and slides | doi:<a href="https://doi.org/10.5194/egusphere-egu2020-549">10.5194/egusphere-egu2020-549</a></li>
+<li>figshare | doi:<a href="https://doi.org/10.6084/m9.figshare.12217973">10.6084/m9.figshare.12217973</a></li>
+</ul>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://widgets.figshare.com/articles/12217973/embed?show_title=0" width="960" height="569" allowfullscreen="true" frameborder="0"></iframe>
+</div>
+
+<h2 id="evaluating-the-accuracy-of-equivalent-source-predictions-using-cross-validation">Evaluating the accuracy of equivalent-source predictions using cross-validation</h2>
+<blockquote>
+<p>We investigate the use of cross-validation (CV) techniques to estimate the
+accuracy of equivalent-source (also known as equivalent-layer) models for
+interpolation and processing of potential-field data. Our preliminary results
+indicate that some common CV algorithms (e.g., random permutations and
+k-folds) tend to overestimate the accuracy. We have found that blocked CV
+methods, where the data are split along spatial blocks instead of randomly,
+provide more conservative and realistic accuracy estimates. Beyond evaluating
+an equivalent-source model's performance, cross-validation can be used to
+automatically determine configuration parameters, like source depth and
+amount of regularization, that maximize prediction accuracy and avoid
+over-fitting.</p>
+</blockquote>
+<ul>
+<li>EGU abstract and slides | doi:<a href="https://doi.org/10.5194/egusphere-egu2020-15729">10.5194/egusphere-egu2020-15729</a></li>
+<li>figshare | doi:<a href="https://doi.org/10.6084/m9.figshare.12245372">10.6084/m9.figshare.12245372</a></li>
+</ul>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://widgets.figshare.com/articles/12245372/embed?show_title=0" width="960" height="569" allowfullscreen="true" frameborder="0"></iframe>
+</div>
+        </div>
+        <div class="col-md-4">
+                    <h2>Related</h2>
+        <ul class="fa-ul">
+            <li>
+                <i class="fa-li fa fa-comment-o fa-fw"></i>
+                <a href="/news/transform2021.html">Free online workshop on gravity data processing at Transform 2021</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-comment-o fa-fw"></i>
+                <a href="/news/graduation2020.html">Farewell to Steven, Charlie, Lottie, and Alex</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-comment-o fa-fw"></i>
+                <a href="/news/transform2020.html">Free online workshops at Transform 2020</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-comment-o fa-fw"></i>
+                <a href="/news/ssi-fellowship.html">Leo has been awarded a Software Sustainability Institute Fellowship</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-comment-o fa-fw"></i>
+                <a href="/news/introduction.html">Introducing the Computer-Oriented Geoscience Lab</a>
+            </li>
+        </ul>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <footer>
+
+    <div class="container-fluid menu menu-transparent text-center">
+        <div class="col-lg-12 menu-brand">
+        </div>
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/software">Software</a></li>
+                    <li><a href="/data">Data</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/people">People</a></li>
+                    <li><a href="/tag/open-positions">Work with us</a></li>
+                    <li><a href="https://github.com/compgeolab/manual">Lab manual</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a target="_blank" href="https://github.com/compgeolab"><i class="fa fa-github fa-lg" title="GitHub"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for news and papers"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="footer-text text-center">
+  <div class="container">
+  <p>
+    Department of Earth, Ocean and Ecological Sciences • School of Environmental Sciences • University of Liverpool • UK
+  </p>
+  <p>
+    Source code to build this site:
+    <a href="https://github.com/compgeolab/website">compgeolab/website</a>
+    •
+    Last updated 2021-05-21
+    from commit <code><a href="https://github.com/compgeolab/website/commit/934fa0f">934fa0f</a></code>
+  </p>
+  <p>
+    © 2021 Leonardo Uieda
+    •
+    Except where noted, all content is available under a
+    <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY</a>
+    license
+  </p>
+</div>
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- For the altmetric badge in articles -->
+    <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+</body>
+</html>

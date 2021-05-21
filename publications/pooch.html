@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.compgeolab.org/images/twitter-card-image.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Pooch: A friend to fetch your data files">
+            <meta name="twitter:description" content="About This paper marks the release of Pooch v0.7.1, a Python library for downloading and managing data files. Pooch is a part of the new eco...">
+
+    <meta property="og:title" content="Pooch: A friend to fetch your data files">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.compgeolab.org/publications/pooch.html">
+    <meta property="og:site_name" content="Computer-Oriented Geoscience Lab">
+    <meta property="og:image" content="https://www.compgeolab.org/images/twitter-card-image.png">
+            <meta property="og:description" content="About This paper marks the release of Pooch v0.7.1, a Python library for downloading and managing data files. Pooch is a part of the new eco...">
+
+    <title>    Pooch: A friend to fetch your data files | Computer-Oriented Geoscience Lab
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.compgeolab.org/rss.xml" title="Computer-Oriented Geoscience Lab">
+
+    <!-- Include Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,700%7COpen+Sans:400,600" rel="stylesheet">
+
+    <!--Include the Font Awesome and Academicons CSS-->
+    <link rel="stylesheet" href="/css/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+        <div class="banner"
+             style="background-image: linear-gradient(to top, transparent, #00000099), url(/images/banner/disturbance.jpg); background-position: center;">
+
+                <div class="container-fluid menu menu-transparent text-center">
+        <div class="col-lg-3 menu-brand">
+                <a href="/">
+                    <img src="/images/compgeolab-banner.svg" title="Computer-Oriented Geoscience Lab">
+                </a>
+        </div>
+        <div class="col-lg-6 menu-list">
+            <ul>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/software">Software</a></li>
+                    <li><a href="/data">Data</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/people">People</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 menu-list">
+            <ul>
+                    <li><a target="_blank" href="https://github.com/compgeolab"><i class="fa fa-github fa-lg" title="GitHub"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for news and papers"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+        </div>
+
+
+    <div class="container">
+
+
+    <h1 class="pub-title">Pooch: A friend to fetch your data files</h1>
+
+        <p class="pub-date-author">
+            <a href="/people/uieda.html">Leonardo Uieda</a>, <a href="/people/santisoler.html">Santiago R. Soler</a>,             Rémi Rampin,             Hugo van Kemenade,             Matthew Turk,             Daniel Shapero,             Anderson Banihirwe,             John Leeman
+                <span class="post-date">(2020)</span>
+        </p>
+
+    
+
+    <div class="row">
+        <div class="col-md-8">
+            <h2 id="about">About</h2>
+<p>This paper marks the release of <a href="http://www.fatiando.org/pooch">Pooch</a> v0.7.1,
+a Python library for downloading and managing data files.
+Pooch is a part of the new ecosystem of packages in
+<a href="https://www.fatiando.org">Fatiando a Terra</a>.
+It's used by most of the other packages to manage the sample data files used
+for testing and documentation.</p>
+<p>The peer-review at JOSS is open and can be found at
+<a href="https://github.com/openjournals/joss-reviews/issues/1943">openjournals/joss-reviews#1943</a>.</p>
+<h2 id="abstract">Abstract</h2>
+<p>Scientific software is usually created to acquire, analyze, model, and
+visualize data. As such, many software libraries include sample datasets in
+their distributions for use in documentation, tests, benchmarks, and workshops.
+A common approach is to include smaller datasets in the GitHub repository
+directly and package them with the source and binary distributions (e.g.,
+scikit-learn and scikit-image do this). As data files increase in size, it
+becomes unfeasible to store them in GitHub repositories. Thus, larger datasets
+require writing code to download the files from a remote server to the user's
+computer. The same problem is faced by scientists using version control to
+manage their research projects. While downloading a data file over HTTPS can be
+done easily with modern Python libraries, it is not trivial to manage a set of
+files, keep them updated, and check for corruption. For example, scikit-learn,
+Cartopy, and PyVista all include code dedicated to this particular task.
+Instead of scientists and library authors recreating the same code, it would be
+best to have a minimalistic and easy to set up tool for fetching and
+maintaining data files.</p>
+<p>Pooch is a Python library that fills this gap. It manages a data <em>registry</em>
+(containing file names, SHA-256 cryptographic hashes, and download URLs) by
+downloading files from one or more remote servers and storing them in a local
+data cache. Pooch is written in pure Python and has minimal dependencies. It
+can be easily installed from the Python Package Index (PyPI) and conda-forge on
+a wide range of Python versions: 2.7 (up to Pooch 0.6.0) and from 3.5 to 3.8.</p>
+
+                <h2>Citation</h2>
+                <p>Uieda, L., Soler, S.R., Rampin, R., van Kemenade, H., Turk, M., Shapero, D., Banihirwe, A., and Leeman, J. (2020). Pooch: A friend to fetch your data files. Journal of Open Source Software, 5(45), 1943. doi:10.21105/joss.01943</p>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-3">
+            <h2>Info</h2>
+
+            <div class="info">
+                <ul class="fa-ul"><li>
+                <i class="fa-li ai ai-open-access fa-fw" title="Open-access article"></i>
+                Open-Access
+            </li><li>
+                <i class="fa-li fa fa-book fa-fw" title="Journal name"></i>
+                Journal: <em>Journal of Open Source Software</em>
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a target="_blank" href="https://github.com/fatiando/pooch">fatiando/pooch</a>
+            </li><li>
+                <i class="fa-li fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+                doi: <a target="_blank" href="https://doi.org/10.21105/joss.01943">10.21105/joss.01943</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/fatiando">fatiando</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/open-source">open-source</a></span></li></ul>
+    </div>
+            </li></ul>
+            </div>
+
+                <h2>Article Level Metrics</h2>
+                <div class="alm">
+            <div data-badge-details="right" data-badge-type="medium-donut" data-doi="10.21105/joss.01943"  data-condensed="true" class="altmetric-embed"></div>
+        </div><div class="alm">
+            <span class="__dimensions_badge_embed__" data-doi="10.21105/joss.01943" data-legend="always"></span>
+    <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+        </div>
+
+                    <h2>Related</h2>
+        <ul class="fa-ul">
+            <li>
+                <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                <a href="/publications/eql-gradient-boosted.html">Gradient-boosted equivalent sources</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                <a href="/publications/verde.html">Verde: Processing and gridding spatial data using Green's functions</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                <a href="/publications/tesseroids.html">Tesseroids: forward modeling gravitational fields in spherical coordinates</a>
+            </li>
+        </ul>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <footer>
+
+    <div class="container-fluid menu menu-transparent text-center">
+        <div class="col-lg-12 menu-brand">
+        </div>
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/software">Software</a></li>
+                    <li><a href="/data">Data</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/people">People</a></li>
+                    <li><a href="/tag/open-positions">Work with us</a></li>
+                    <li><a href="https://github.com/compgeolab/manual">Lab manual</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a target="_blank" href="https://github.com/compgeolab"><i class="fa fa-github fa-lg" title="GitHub"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for news and papers"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="footer-text text-center">
+  <div class="container">
+  <p>
+    Department of Earth, Ocean and Ecological Sciences • School of Environmental Sciences • University of Liverpool • UK
+  </p>
+  <p>
+    Source code to build this site:
+    <a href="https://github.com/compgeolab/website">compgeolab/website</a>
+    •
+    Last updated 2021-05-21
+    from commit <code><a href="https://github.com/compgeolab/website/commit/934fa0f">934fa0f</a></code>
+  </p>
+  <p>
+    © 2021 Leonardo Uieda
+    •
+    Except where noted, all content is available under a
+    <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY</a>
+    license
+  </p>
+</div>
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- For the altmetric badge in articles -->
+    <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+</body>
+</html>

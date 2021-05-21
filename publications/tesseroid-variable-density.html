@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.compgeolab.org/images/twitter-card-image.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Gravitational field calculation in spherical coordinates using variable densities in depth">
+            <meta name="twitter:description" content="About This paper builds upon our work on Tesseroids and extends the methodology to work for depth-variable densities. Santiago led this proj...">
+
+    <meta property="og:title" content="Gravitational field calculation in spherical coordinates using variable densities in depth">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.compgeolab.org/publications/tesseroid-variable-density.html">
+    <meta property="og:site_name" content="Computer-Oriented Geoscience Lab">
+    <meta property="og:image" content="https://www.compgeolab.org/images/twitter-card-image.png">
+            <meta property="og:description" content="About This paper builds upon our work on Tesseroids and extends the methodology to work for depth-variable densities. Santiago led this proj...">
+
+    <title>    Gravitational field calculation in spherical coordinates using variable densities in depth | Computer-Oriented Geoscience Lab
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.compgeolab.org/rss.xml" title="Computer-Oriented Geoscience Lab">
+
+    <!-- Include Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,700%7COpen+Sans:400,600" rel="stylesheet">
+
+    <!--Include the Font Awesome and Academicons CSS-->
+    <link rel="stylesheet" href="/css/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+        <div class="banner"
+             style="background-image: linear-gradient(to top, transparent, #00000099), url(/images/banner/disturbance.jpg); background-position: center;">
+
+                <div class="container-fluid menu menu-transparent text-center">
+        <div class="col-lg-3 menu-brand">
+                <a href="/">
+                    <img src="/images/compgeolab-banner.svg" title="Computer-Oriented Geoscience Lab">
+                </a>
+        </div>
+        <div class="col-lg-6 menu-list">
+            <ul>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/software">Software</a></li>
+                    <li><a href="/data">Data</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/people">People</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 menu-list">
+            <ul>
+                    <li><a target="_blank" href="https://github.com/compgeolab"><i class="fa fa-github fa-lg" title="GitHub"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for news and papers"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+        </div>
+
+
+    <div class="container">
+
+
+    <h1 class="pub-title">Gravitational field calculation in spherical coordinates using variable densities in depth</h1>
+
+        <p class="pub-date-author">
+            <a href="/people/santisoler.html">Santiago R. Soler</a>,             Agustina Pesce,             Mario E. Gimenez, <a href="/people/uieda.html">Leonardo Uieda</a>
+                <span class="post-date">(2019)</span>
+        </p>
+
+    
+
+    <div class="row">
+        <div class="col-md-8">
+            <h2 id="about">About</h2>
+<p>This paper builds upon <a href="/publications/tesseroids.html" title="Tesseroids: forward modeling gravitational fields in spherical coordinates">our work on Tesseroids</a> and
+extends the methodology to work for depth-variable densities. Santiago led this
+project, did most of the work and a large part of the writing of the paper.</p>
+<p><img alt="Application of the methodology to the Neuquén Basin, Argentina." src="/images/tesseroid-variable-density-results.jpg" />
+<em>Figure: Application of the methodology to the Neuquén Basin, a foreland basin in the
+southern Andes. (a) Topography of the Neuquén Basin and its location in South America.
+(b) Thickness of the sedimentary basin. Inset shows the exponential density profile used
+in the modeling. (c) Resulting vertical gravitational acceleration at 10 km height
+modeled by tesseroids with exponential density variation in depth. (d) Difference
+between gravitational acceleration modeled using the exponential density profile and a
+homogeneous density.</em></p>
+<h2 id="abstract">Abstract</h2>
+<p>We present a new methodology to compute the gravitational fields generated by tesseroids
+(spherical prisms) whose density varies with depth according to an arbitrary continuous
+function. It approximates the gravitational fields through the Gauss-Legendre Quadrature
+along with two discretization algorithms that automatically control its accuracy by
+adaptively dividing the tesseroid into smaller ones. The first one is a preexisting two
+dimensional adaptive discretization algorithm that reduces the errors due to the
+distance between the tesseroid and the computation point. The second is a new
+density-based discretization algorithm that decreases the errors introduced by the
+variation of the density function with depth. The amount of divisions made by each
+algorithm is indirectly controlled by two parameters: the distance-size ratio and the
+delta ratio. We have obtained analytical solutions for a spherical shell with radially
+variable density and compared them to the results of the numerical model for linear,
+exponential, and sinusoidal density functions. These comparisons allowed us to obtain
+optimal values for the distance-size and delta ratios that yield an accuracy of 0.1% of
+the analytical solutions. The resulting optimal values of distance-size ratio for the
+gravitational potential and its gradient are 1 and 2.5, respectively. The density-based
+discretization algorithm produces no discretizations in the linear density case, but a
+delta ratio of 0.1 is needed for the exponential and the sinusoidal density functions.
+These values can be extrapolated to cover most common use cases. However, the
+distance-size and delta ratios can be configured by the user to increase the accuracy of
+the results at the expense of computational speed. Lastly, we apply this new methodology
+to model the Neuquén Basin, a foreland basin in Argentina with a maximum depth of over
+5000 m, using an exponential density function.</p>
+
+                <h2>Citation</h2>
+                <p>Soler, S. R., Pesce, A., Gimenez, M. E., & Uieda, L., 2019. Gravitational field calculation in spherical coordinates using variable densities in depth, Geophysical Journal International, doi:10.1093/gji/ggz277</p>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-3">
+            <h2>Info</h2>
+
+            <div class="info">
+                <ul class="fa-ul"><li>
+                <i class="fa-li fa fa-book fa-fw" title="Journal name"></i>
+                Journal: <em>Geophysical Journal International</em>
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a target="_blank" href="https://github.com/pinga-lab/tesseroid-variable-density">pinga-lab/tesseroid-variable-density</a>
+            </li><li>
+                <i class="fa-li fa fa-paperclip fa-fw" title="Supplementary material"></i>
+                Data/Supplement: <a target="_blank" href="https://doi.org/10.6084/m9.figshare.8239622">10.6084/m9.figshare.8239622</a>
+            </li><li>
+                <i class="fa-li fa fa-file-pdf-o fa-fw" title="Preprint PDF"></i>
+                PDF (preprint): <a target="_blank" href="https://doi.org/10.31223/osf.io/3548g">10.31223/osf.io/3548g</a>
+            </li><li>
+                <i class="fa-li fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+                doi: <a target="_blank" href="https://doi.org/10.1093/gji/ggz277">10.1093/gji/ggz277</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/gravity">gravity</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/tesseroids">tesseroids</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/forward-modeling">forward-modeling</a></span></li></ul>
+    </div>
+            </li></ul>
+            </div>
+
+                <h2>Article Level Metrics</h2>
+                <div class="alm">
+            <div data-badge-details="right" data-badge-type="medium-donut" data-doi="10.1093/gji/ggz277"  data-condensed="true" class="altmetric-embed"></div>
+        </div><div class="alm">
+            <span class="__dimensions_badge_embed__" data-doi="10.1093/gji/ggz277" data-legend="always"></span>
+    <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+        </div>
+
+                    <h2>Related</h2>
+        <ul class="fa-ul">
+            <li>
+                <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                <a href="/publications/eql-gradient-boosted.html">Gradient-boosted equivalent sources</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                <a href="/publications/moho-tesseroid-inversion.html">Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                <a href="/publications/tesseroids.html">Tesseroids: forward modeling gravitational fields in spherical coordinates</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                <a href="/publications/planting-inversion.html">Robust 3D gravity gradient inversion by planting anomalous densities</a>
+            </li>
+        </ul>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <footer>
+
+    <div class="container-fluid menu menu-transparent text-center">
+        <div class="col-lg-12 menu-brand">
+        </div>
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/software">Software</a></li>
+                    <li><a href="/data">Data</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/people">People</a></li>
+                    <li><a href="/tag/open-positions">Work with us</a></li>
+                    <li><a href="https://github.com/compgeolab/manual">Lab manual</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a target="_blank" href="https://github.com/compgeolab"><i class="fa fa-github fa-lg" title="GitHub"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for news and papers"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="footer-text text-center">
+  <div class="container">
+  <p>
+    Department of Earth, Ocean and Ecological Sciences • School of Environmental Sciences • University of Liverpool • UK
+  </p>
+  <p>
+    Source code to build this site:
+    <a href="https://github.com/compgeolab/website">compgeolab/website</a>
+    •
+    Last updated 2021-05-21
+    from commit <code><a href="https://github.com/compgeolab/website/commit/934fa0f">934fa0f</a></code>
+  </p>
+  <p>
+    © 2021 Leonardo Uieda
+    •
+    Except where noted, all content is available under a
+    <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY</a>
+    license
+  </p>
+</div>
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- For the altmetric badge in articles -->
+    <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Leonardo Uieda"/>
+
+            <meta name="keywords" content="science, geoscience, geophysics, software, open-source"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.compgeolab.org/images/twitter-card-image.png">
+    <meta name="twitter:site" content="@leouieda">
+    <meta name="twitter:title" content="Verde: Processing and gridding spatial data using Green's functions">
+            <meta name="twitter:description" content="About This paper marks the first release of Verde, a Python library for processing and gridding spatial data. Verde is the first part of a l...">
+
+    <meta property="og:title" content="Verde: Processing and gridding spatial data using Green's functions">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.compgeolab.org/publications/verde.html">
+    <meta property="og:site_name" content="Computer-Oriented Geoscience Lab">
+    <meta property="og:image" content="https://www.compgeolab.org/images/twitter-card-image.png">
+            <meta property="og:description" content="About This paper marks the first release of Verde, a Python library for processing and gridding spatial data. Verde is the first part of a l...">
+
+    <title>    Verde: Processing and gridding spatial data using Green's functions | Computer-Oriented Geoscience Lab
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="alternate" type="application/rss+xml" href="https://www.compgeolab.org/rss.xml" title="Computer-Oriented Geoscience Lab">
+
+    <!-- Include Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,700%7COpen+Sans:400,600" rel="stylesheet">
+
+    <!--Include the Font Awesome and Academicons CSS-->
+    <link rel="stylesheet" href="/css/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+        <div class="banner"
+             style="background-image: linear-gradient(to top, transparent, #00000099), url(/images/banner/disturbance.jpg); background-position: center;">
+
+                <div class="container-fluid menu menu-transparent text-center">
+        <div class="col-lg-3 menu-brand">
+                <a href="/">
+                    <img src="/images/compgeolab-banner.svg" title="Computer-Oriented Geoscience Lab">
+                </a>
+        </div>
+        <div class="col-lg-6 menu-list">
+            <ul>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/software">Software</a></li>
+                    <li><a href="/data">Data</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/people">People</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 menu-list">
+            <ul>
+                    <li><a target="_blank" href="https://github.com/compgeolab"><i class="fa fa-github fa-lg" title="GitHub"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for news and papers"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+        </div>
+
+
+    <div class="container">
+
+
+    <h1 class="pub-title">Verde: Processing and gridding spatial data using Green's functions</h1>
+
+        <p class="pub-date-author">
+            <a href="/people/uieda.html">Leonardo Uieda</a>
+                <span class="post-date">(2018)</span>
+        </p>
+
+    
+
+    <div class="row">
+        <div class="col-md-8">
+            <h2 id="about">About</h2>
+<p>This paper marks the first release of <a href="https://www.fatiando.org/verde">Verde</a>, a Python
+library for processing and gridding spatial data. Verde is the first part of a
+<a href="https://www.leouieda.com/blog/future-of-fatiando.html">large-scale refactoring of the Fatiando a Terra project</a>
+into separate packages.</p>
+<p>The peer-review at JOSS is open and can be found at
+<a href="https://github.com/openjournals/joss-reviews/issues/957">openjournals/joss-reviews#957</a>.</p>
+<p><img alt="Example of using verde.BlockMean with data uncertainties." src="/images/block-mean-example.jpg" />
+<br>
+<em>Figure: Example of using <code>verde.BlockMean</code> to calculate weighted means in spatial
+blocks assuming different uncertainty models. Full source code to produce this image is
+available in the <a href="https://www.fatiando.org/verde/v1.2.0/gallery/blockreduce_weights_mean.html">Verde example
+gallery</a>.</em></p>
+<h2 id="abstract">Abstract</h2>
+<p><em>Verde</em> is a Python library for gridding spatial data using different Green's functions.
+It differs from the radial basis functions in <code>scipy.interpolate</code> by providing an API
+inspired by scikit-learn. The <em>Verde</em> API should be familiar to scikit-learn users but
+is tweaked to work with spatial data, which has Cartesian or geographic coordinates and
+multiple data components instead of an <code>X</code> feature matrix and <code>y</code> label vector. The
+library also includes more specialized Green's functions, utilities for trend estimation
+and data decimation (which are often required prior to gridding), and more. Some of
+these interpolation and data processing methods already exist in the Generic Mapping
+Tools (GMT), a command-line program popular in the Earth Sciences. However, there are no
+model selection tools in GMT and it can be difficult to separate parts of the processing
+that are done internally by its modules. <em>Verde</em> is designed to be modular, easily
+extended, and integrated into the scientific Python ecosystem. It can be used to
+implement new interpolation methods by subclassing the <code>verde.base.BaseGridder</code> class,
+requiring only the implementation of the new Green's function. For example, it is
+currently being used to develop a method for interpolation of 3-component GPS data.</p>
+
+                <h2>Citation</h2>
+                <p>Uieda, L. (2018). Verde: Processing and gridding spatial data using Green's functions. Journal of Open Source Software, 3(30), 957. doi:10.21105/joss.00957</p>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-3">
+            <h2>Info</h2>
+
+            <div class="info">
+                <ul class="fa-ul"><li>
+                <i class="fa-li ai ai-open-access fa-fw" title="Open-access article"></i>
+                Open-Access
+            </li><li>
+                <i class="fa-li fa fa-book fa-fw" title="Journal name"></i>
+                Journal: <em>Journal of Open Source Software</em>
+            </li><li>
+                <i class="fa-li fa fa-code fa-fw" title="Source code repository"></i>
+                Source code: <a target="_blank" href="https://github.com/fatiando/verde">fatiando/verde</a>
+            </li><li>
+                <i class="fa-li fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+                doi: <a target="_blank" href="https://doi.org/10.21105/joss.00957">10.21105/joss.00957</a>
+            </li><li>
+                <i class="fa-li fa fa-tags fa-fw" title="tags"></i>
+                    <div class="tag-list">
+        <ul><li><span class="label label-default tag tag-link"><a href="/tag/fatiando">fatiando</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/open-source">open-source</a></span></li><li><span class="label label-default tag tag-link"><a href="/tag/data-processing">data-processing</a></span></li></ul>
+    </div>
+            </li></ul>
+            </div>
+
+                <h2>Article Level Metrics</h2>
+                <div class="alm">
+            <div data-badge-details="right" data-badge-type="medium-donut" data-doi="10.21105/joss.00957"  data-condensed="true" class="altmetric-embed"></div>
+        </div><div class="alm">
+            <span class="__dimensions_badge_embed__" data-doi="10.21105/joss.00957" data-legend="always"></span>
+    <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+        </div>
+
+                    <h2>Related</h2>
+        <ul class="fa-ul">
+            <li>
+                <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                <a href="/publications/eql-gradient-boosted.html">Gradient-boosted equivalent sources</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                <a href="/publications/pooch.html">Pooch: A friend to fetch your data files</a>
+            </li>
+            <li>
+                <i class="fa-li fa fa-file-text-o fa-fw"></i>
+                <a href="/publications/tesseroids.html">Tesseroids: forward modeling gravitational fields in spherical coordinates</a>
+            </li>
+        </ul>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <footer>
+
+    <div class="container-fluid menu menu-transparent text-center">
+        <div class="col-lg-12 menu-brand">
+        </div>
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/research">Research</a></li>
+                    <li><a href="/software">Software</a></li>
+                    <li><a href="/data">Data</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <li><a href="/people">People</a></li>
+                    <li><a href="/tag/open-positions">Work with us</a></li>
+                    <li><a href="https://github.com/compgeolab/manual">Lab manual</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-12 menu-list">
+            <ul>
+                    <li><a target="_blank" href="https://github.com/compgeolab"><i class="fa fa-github fa-lg" title="GitHub"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/leouieda"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+                    <li><a href="/tag"><i class="fa fa-tags fa-lg" title="Browse by tag"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss fa-lg" title="RSS feed for news and papers"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="footer-text text-center">
+  <div class="container">
+  <p>
+    Department of Earth, Ocean and Ecological Sciences • School of Environmental Sciences • University of Liverpool • UK
+  </p>
+  <p>
+    Source code to build this site:
+    <a href="https://github.com/compgeolab/website">compgeolab/website</a>
+    •
+    Last updated 2021-05-21
+    from commit <code><a href="https://github.com/compgeolab/website/commit/934fa0f">934fa0f</a></code>
+  </p>
+  <p>
+    © 2021 Leonardo Uieda
+    •
+    Except where noted, all content is available under a
+    <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY</a>
+    license
+  </p>
+</div>
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- For the altmetric badge in articles -->
+    <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+</body>
+</html>
