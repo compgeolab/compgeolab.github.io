@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talk on improved magnetic microscopy inversion at the 2024 Castle Meeting | Computer-Oriented Geoscience Lab</title>
+  <link rel="shortcut icon" href="../images/favicon.png"/>
+
+  <!-- OpenGraph social media card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Talk on improved magnetic microscopy inversion at the 2024 Castle Meeting | Computer-Oriented Geoscience Lab" />
+  <meta property="og:description" content="Last Thursday, lab member Gelson F. Souza Junior gave a talk at the 2024 Castle Meeting at Utrecht, The Netherlands. The talk showed the first results of a significant improvement that we made to..." />
+  <meta property="og:image" content="https://www.compgeolab.org/images/thumbnail.jpg" />
+  <meta property="og:url" content="https://www.compgeolab.org/news/castlemeeting2024.html" />
+
+  <!-- Atkinson Hyperlegible fonts -->
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-next/font.css" />
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-mono/font.css" />
+
+  <!-- Andy Bell's CSS reset -->
+  <link rel="stylesheet" href="../css/reset.css" />
+
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Plausible analytics for anonymous usage statistics -->
+  <script defer data-domain="compgeolab.org" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="spread content-wide">
+      <a href="../index.html">
+        <img src="../images/compgeolab-banner.svg" alt="Computer-Oriented Geoscience Lab">
+      </a>
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+            <li>
+              <a class=""  href="../">Home</a>
+            </li>
+            <li>
+              <a class="active" aria-current="page" href=".">News</a>
+            </li>
+            <li>
+              <a class=""  href="../team/">Team</a>
+            </li>
+            <li>
+              <a class=""  href="../research/">Research</a>
+            </li>
+            <li>
+              <a class=""  href="../manual/">Manual</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flow">
+    <div class="content flow extra-space">
+  <article class="flow">
+    <h1>Talk on improved magnetic microscopy inversion at the 2024 Castle Meeting</h1>
+    <p class="text-muted">
+      Published on 2024/07/08 by Leonardo Uieda.
+    </p>
+    <p>Last Thursday, lab member <a href="../team#Souza-junior">Gelson F. Souza Junior</a> gave a
+talk at the <a href="https://castlemeeting.org/">2024 Castle Meeting</a> at  Utrecht, The
+Netherlands.
+The talk showed the first results of a significant improvement that we made to
+our <a href="preprint-micromag-euler-dipole.html">magnetic microscopy inversion method</a>.
+We are now able to correctly recover the dipole moments of most sources in an
+image, even the ones subject to large interference from other sources!</p>
+  <figure>
+    <img src="../images/news/castlemeeting2024.jpg" alt="Presenter (brown-skinned male in a green t-shirt) behind lectern next to presentation screen with introduction slide. Slide contains classic paleomagnetic studies that use samples of approximated 10 cm³ with hundreds of thousands to millions of individual magnetic particles. Also seen are the backs of the heads of 8 audience members." style="">
+    <figcaption>Gelson presenting the motivation to our studies into magnetic microscopy inversion to a captive audience.</figcaption>
+  </figure>
+<p>This research is being developed under our <a href="rsoc-mag-microscopy-2022.html">Royal Society
+grant</a> and Gelson’s PhD, which is funded by
+<a href="https://fapesp.br/">FAPESP</a>.</p>
+<h2 id="abstract">Abstract</h2>
+<p>Paleomagnetic data are typically obtained from bulk samples, where the signal
+results from the combined magnetic moments of hundreds of thousands to millions
+of magnetic particles within the sample volume, including both stable and
+unstable remanence carriers. Recently, magnetic microscopy techniques have
+enabled the investigation of individual grains by directly imaging their
+magnetic fields. However, determining the magnetic moments of individual grains
+is challenging because of the intrinsic ambiguity in the inversion of potential
+field data and the large number of grains in any microscopy image. Recently, we
+proposed a window-based technique capable of estimating the magnetization of
+each magnetic source using only magnetic microscopy data by applying the Euler
+deconvolution as prior information of the source position. Upon further
+investigation of inversions using magnetic microscopy data, we encountered
+situations in which the outcomes of this methodology were not adequate,
+particularly when particles are clustered together or when the signal of a
+smaller particle is embedded in the signal of a larger one. Although the
+algorithm removed the unreliable estimates in the final filtering process, it
+would be desirable to estimate the positions and dipole moments of these
+sources correctly. This led to the development of a more robust and accurate
+approach to account for the mutual interference between the sources and also
+for the undesirable static shifts in the magnetic field during the
+measurements. The revised method incorporates an iterative Euler deconvolution
+scheme and non-linear optimization techniques to refine position and magnetic
+moment estimates from the linear inversion. Our synthetic data application
+demonstrated significant improvements in accuracy compared to the standard
+method, particularly in scenarios with high levels of source interaction. The
+real data application further validated the method, showing better clustering
+of magnetization directions and less penalization of weaker sources. The
+proposed approach enhances the precision of inversion analyses, providing a
+substantial advancement in magnetic microscopy. It effectively mitigates the
+impact of stronger sources and static shifts, ensuring more accurate and
+reliable results in studying paleomagnetic and rock magnetic properties.</p>
+
+    <p class="text-right">
+      <a href="index.html">
+        ← Back to news and lab updates
+      </a>
+    </p>
+  </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="content-wide flow flow-large">
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+          <li>
+            <a class=""  href="../">Home</a>
+          </li>
+          <li>
+            <a class="active" aria-current="page" href=".">News</a>
+          </li>
+          <li>
+            <a class=""  href="../team/">Team</a>
+          </li>
+          <li>
+            <a class=""  href="../research/">Research</a>
+          </li>
+          <li>
+            <a class=""  href="../manual/">Manual</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list-inline" role="list">
+        <li><strong>Follow the lab:</strong></li>
+        <li>
+          <a href="https://github.com/compgeolab" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="https://bertha.social/@leouieda" target="_blank">Mastodon</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/uieda" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://zenodo.org/communities/compgeolab" target="_blank">Zenodo</a>
+        </li>
+        <li>
+          <a href="https://www.researchgate.net/lab/Computer-Oriented-Geoscience-Lab-Leonardo-Uieda" target="_blank">ResearchGate</a>
+        </li>
+      </ul>
+      <div class="font-small">
+        <p class="text-bold">
+          Departamento de Geofísica
+          —
+          Instituto de Astronomia, Geofísica e Ciências Atmosféricas
+          —
+          Universidade de São Paulo
+          —
+          Brasil
+        </p>
+        <p>
+          Last updated on 24 February 2026.
+          Built with <a href="https://nene.leouieda.com">Nēnē</a> v0.9.0
+          from source code at
+          <a href="https://github.com/compgeolab/website">compgeolab/website</a>
+          (<a href="https://github.com/compgeolab/website/commit/4d42338">4d42338</a>).
+        </p>
+        <p>
+          Copyright &copy; 2026 Leonardo Uieda.
+          Except where otherwise noted, all content is licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Links to resources | Computer-Oriented Geoscience Lab</title>
+  <link rel="shortcut icon" href="../images/favicon.png"/>
+
+  <!-- OpenGraph social media card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Links to resources | Computer-Oriented Geoscience Lab" />
+  <meta property="og:description" content="A curated list of software tools, services, and learning resources that could be handy for the work we do in the lab. Feel free to add new things that you’ve found useful! Learning resources..." />
+  <meta property="og:image" content="https://www.compgeolab.org/images/thumbnail.jpg" />
+  <meta property="og:url" content="https://www.compgeolab.org/manual/resources.html" />
+
+  <!-- Atkinson Hyperlegible fonts -->
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-next/font.css" />
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-mono/font.css" />
+
+  <!-- Andy Bell's CSS reset -->
+  <link rel="stylesheet" href="../css/reset.css" />
+
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Plausible analytics for anonymous usage statistics -->
+  <script defer data-domain="compgeolab.org" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="spread content-wide">
+      <a href="../index.html">
+        <img src="../images/compgeolab-banner.svg" alt="Computer-Oriented Geoscience Lab">
+      </a>
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+            <li>
+              <a class=""  href="../">Home</a>
+            </li>
+            <li>
+              <a class=""  href="../news/">News</a>
+            </li>
+            <li>
+              <a class=""  href="../team/">Team</a>
+            </li>
+            <li>
+              <a class=""  href="../research/">Research</a>
+            </li>
+            <li>
+              <a class="active" aria-current="page" href=".">Manual</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flow">
+    <div class="content flow extra-space">
+  <div class="column-container flow">
+    <div class="column-body flow">
+      <h1>Links to resources</h1>
+      <div class="lead">
+<p>A curated list of software tools, services, and learning resources that could
+be handy for the work we do in the lab.
+<strong>Feel free to add new things that you’ve found useful!</strong></p>
+</div>
+<h2 id="learning-resources">Learning resources</h2>
+<p>Coding and software development:</p>
+<ul>
+<li><a href="https://software-carpentry.org/lessons/">Software Carpentry</a> has community
+driven lessons on how to use the Unix shell, Version Control with Git, and
+Python.</li>
+<li><a href="https://www.youtube.com/c/SoftwareUnderground/videos">Transform tutorials</a>:
+<a href="https://softwareunderground.org/">Software Underground</a> hosts the yearly
+Transform events where a lot of tutorials take place, particularly oriented
+to teaching how to use open-source tools for geosciences.</li>
+<li><a href="https://chris.beams.io/posts/git-commit/">How to Write a Git Commit
+Message</a>: a comprehensive guide to
+learn how to write meaningful git commie messages. Read it sooner than later!</li>
+<li><a href="https://git-scm.com/book/en/v2">Pro Git book</a>, by Scott Chacon and Ben
+Straub. Licensed under CC-BY-NC-SA 3.0 and available in different formats
+(PDF, epub and as website).</li>
+</ul>
+<p>LaTeX (producing beautiful documents):</p>
+<ul>
+<li><a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">Learn LaTex in 30 minutes</a>
+by Overleaf</li>
+<li><a href="https://www.learnlatex.org/en/">Intro to LaTeX</a>: also avaiable in
+<a href="https://www.learnlatex.org/pt/">Português (Portuguese)</a>, <a href="https://www.learnlatex.org/ca/">Català (Catalan)</a>,
+<a href="https://www.learnlatex.org/de/">Deutsch (German)</a>, <a href="https://www.learnlatex.org/es/">Español (Spanish)</a>,
+<a href="https://www.learnlatex.org/fr/">Français (French)</a>, <a href="https://www.learnlatex.org/mr/">Marathi</a> and
+<a href="https://www.learnlatex.org/vi/">Tiếng Việt (Vietnamese)</a></li>
+<li><a href="https://tug.org/pracjourn/2008-1/mori/mori.pdf">Writing a thesis with LaTeX</a>
+by Lapo F. Mori</li>
+</ul>
+<p>Vim or Neovim (text editors):</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=H3o4l4GVLW0&amp;list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R">Vim as your editor
+| ThePrimeagen</a>:
+YouTube playlist for learning Vim progressively.</li>
+<li><a href="https://www.youtube.com/watch?v=DogKdiRx7ls">Your First VimRC (2021) | The Primeagen</a></li>
+<li><a href="https://vimtricks.com/">VimTricks</a>: weekly tips, tricks, guides,
+plugins, videos, screencasts, and more – all about Vim.</li>
+<li><a href="https://vim-adventures.com/">VIM Adventures</a>: learning Vim while playing
+a game</li>
+</ul>
+<h2 id="software-tools">Software tools</h2>
+<div class="callout">
+<p><strong>Note:</strong>
+Every tool listed on below is
+<a href="https://en.wikipedia.org/wiki/Free_software">open-source or software libre</a>.</p>
+</div>
+<p>Document writing and LaTeX:</p>
+<ul>
+<li><a href="https://www.ctan.org/pkg/latexmk">latexmk</a>: a CLI tool that automates the
+process of generating LaTeX documents.</li>
+<li><a href="https://tectonic-typesetting.github.io/en-US/">Tectonic</a>: a modern LaTeX
+engine, powered by XeLaTeX and TeXLive.</li>
+<li><a href="https://pandoc.org/">pandoc</a>: universal document converter (e.g. transform
+Markdown to HTML, to a PDF or to a Microsoft Office/Libre Office document).</li>
+</ul>
+<p>Python:</p>
+<ul>
+<li><a href="https://mamba.readthedocs.io/">mamba</a>: Python package manager</li>
+<li><a href="https://github.com/conda-forge/miniforge">Miniforge</a>: a conda-forge
+distribution (alternative to Anaconda, useful if we don’t desire to agree
+with the <a href="https://www.anaconda.com/pricing/terms-of-service-faqs">Anaconda
+TOS</a>).</li>
+<li><a href="https://github.com/conda-forge/miniforge#mambaforge">Mambaforge</a>: another
+conda-forge distribution that ships the <code>mamba</code> package manager by default.</li>
+</ul>
+<p>Handy command-line tools:</p>
+<ul>
+<li><a href="https://github.com/dandavison/delta">delta</a>: a syntax-highlighting pager for
+git and diff output</li>
+<li><a href="https://imagemagick.org/script/convert.php">convert</a>: a CLI tool to
+transform images (resize, rotate, flip, etc) and convert them to other
+formats (png, jpg, pdf, etc).</li>
+<li><a href="https://cli.github.com/">GitHub CLI</a>: interact with GitHub from the
+terminal.</li>
+<li><a href="https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/">PDFtk</a>: the pdf
+toolkit.</li>
+<li><a href="https://revealjs.com/">reveal-js</a>: create slides as through HTML. For
+inspiration, take a look at
+<a href="https://github.com/leouieda/talk-template">Leo’s</a> and
+<a href="https://github.com/santisoler/talk-template">Santiago’s</a> Reveal-based slide
+templates.</li>
+<li><a href="https://github.com/tldr-pages/tldr">tldr</a> and
+<a href="https://github.com/cheat/cheat">cheat</a>: access collaborative cheat-sheets
+from the terminal.</li>
+</ul>
+<p>Reference management:</p>
+<ul>
+<li><a href="https://www.zotero.org/">Zotero</a>: collect and organize scientific articles</li>
+</ul>
+<p>Graphics:</p>
+<ul>
+<li><a href="https://inkscape.org/">Inkscape</a>: vector graphics editor. Awesome for making
+illustrations, posters, etc.</li>
+</ul>
+<p>Text editors and integrated development environments (IDEs):</p>
+<ul>
+<li><a href="https://neovim.io/">Neovim</a>: hyperextensible
+<a href="https://www.vim.org/">Vim</a>-based text editor.</li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a>: Microsoft’s famous text
+editor (sends telemetry to Microsoft).</li>
+<li><a href="https://vscodium.com/">Codium</a>: Free/Libre open source software binaries of
+VSCode.</li>
+</ul>
+<h2 id="online-services">Online services</h2>
+<ul>
+<li><a href="https://www.overleaf.com/">Overleaf</a>: an online LaTeX editor with lots of
+templates. Useful for UG dissertation students.</li>
+<li><a href="https://eartharxiv.org/">EarthArXiv</a>: Preprint server were we can make our
+papers freely available to anyone under CC licenses (read carefully your
+Journal restrictions on publication of preprints or postprints to archives).</li>
+<li><a href="https://figshare.com">figshare</a> and <a href="https://zenodo.org/">Zenodo</a>: open
+access repositories for figures, dissertations, Thesis, code and mode.</li>
+<li><a href="https://orcid.org/">ORCID</a>: provides an <em>Open Researcher and Contributor ID</em>
+that can be used to identify yourself during publication of papers, abstract
+submissions, etc. Also can help you keep track of your work and your
+background: you can just add them through DOIs.</li>
+<li><a href="https://hackmd.io/">HackMD</a>: collaborative Markdown notes that could be
+synced with GitHub repositories.</li>
+<li><a href="https://www.doi2bib.org/">doi2bib</a>: get a BibTeX entry out of a DOI.</li>
+<li><a href="http://polljunkie.com/">polljunkie</a>: create quick and anonymous polls.</li>
+<li><a href="https://latex.codecogs.com/">Online Equation Editor</a>: generate LaTeX
+equations and export them as images.</li>
+<li><a href="https://choosealicense.com/">choosealicense.com</a>: great website to choose
+software licenses for your projects.</li>
+<li><a href="https://creativecommons.org/share-your-work/">Creative Commons License
+chooser</a>: choose the CC license
+that best suits your needs for your non-software project.</li>
+</ul>
+<h2 id="latex-packages">LaTeX packages</h2>
+<p>A list of useful LaTeX packages that could be tricky to find.
+Most of them are released with a PDF document which explains how to use them:
+they are much more useful than a bunch of replies at StackOverflow.</p>
+<ul>
+<li><a href="https://ctan.org/pkg/hyperref">hyperref</a>: Create hyper-references in your
+PDF with links to equations, figures, sections, chapters, footnotes, etc.</li>
+<li><a href="https://www.ctan.org/pkg/fancyhdr">fancyhdr</a>: Easy way to customize your
+headers and footers.</li>
+<li><a href="https://www.ctan.org/pkg/natbib">natbib</a>: Flexible bibliography support,
+defines the <code>\citet</code> and <code>\citep</code> commands.</li>
+<li><a href="https://www.ctan.org/pkg/datetime2">datetime2</a>: commands for formatting
+dates and time zones.</li>
+<li><a href="https://www.ctan.org/pkg/doi">doi</a>: Create correct hyperlinks for DOI
+numbers.</li>
+<li><a href="https://www.ctan.org/pkg/xurl">xurl</a>: Alternative to the <code>url</code> package that
+allows breaks URLs at the end on the line.</li>
+<li><a href="https://www.ctan.org/pkg/enumitem">enumitem</a>: Extra control over <code>itemize</code>,
+<code>enumerate</code> and <code>description</code>.</li>
+<li><a href="https://www.ctan.org/pkg/algorithm2e">algorithm2e</a>: Add a new type of floats
+for including algorithms to your document.</li>
+<li><a href="https://www.ctan.org/pkg/acronym">acronym</a>: Manage acronyms in your
+document, can optionally create a list of every acronym along with their
+expansions.</li>
+<li><a href="https://www.ctan.org/pkg/tocbibind">tocbibind</a>: Add bibliography, index,
+contents to Table of Contents.</li>
+<li><a href="https://www.ctan.org/pkg/appendix">appendix</a>: Extra control of appendices.</li>
+<li><a href="https://www.ctan.org/pkg/listings">listings</a>: Include source code into your
+document with syntax highlighting and more.</li>
+<li><a href="https://www.ctan.org/pkg/mathpazo">mathpazo</a>: Use the Palatino font.</li>
+</ul>
+<h2 id="other-awesome-lists">Other awesome lists</h2>
+<ul>
+<li><a href="https://github.com/softwareunderground/awesome-open-geoscience">Awesome Open Geoscience</a>
+by <a href="https://softwareunderground.org/">Software Underground</a></li>
+<li><a href="https://github.com/leipzig/awesome-reproducible-research">Awesome Reproducible Research</a></li>
+</ul>
+<h2 id="procrastination-material">Procrastination material</h2>
+<p>Do you want to procrastinate a little bit?</p>
+<p>Try to do the <a href="http://www.pythonchallenge.com/">Python Challenge</a>!
+It’s very difficult but you will learn a lot about programming, pattern
+matching, web scraping, and other things that are actually useful for
+a scientist.</p>
+<p>Watch some really good talks on YouTube:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=zFMdhXYlFfY">Python and the Glories of the UNIX Tradition</a> by Brandon Rhodes</li>
+<li><a href="https://www.youtube.com/watch?v=I56oFTm9UlE">Stopping to Sharpen Your Tools</a> by Brandon Rhodes</li>
+<li><a href="https://www.youtube.com/watch?v=Nd6vturx_yg">The Antipodes</a> by Brandon Rhodes</li>
+<li><a href="https://www.youtube.com/watch?v=sla_vxu-jDk">Data Science and Open Communities</a> by Fernando Perez</li>
+<li><a href="https://www.youtube.com/watch?v=riuyDEHxeEo">History of Python in Science</a> by David Beazley</li>
+<li><a href="https://youtu.be/VUT386_GKI8?si=mmV5PAmEfc4tJIwv">A talk near the future of Python?</a> by David Beazley</li>
+<li><a href="https://youtu.be/lyDLAutA88s?si=khElSQ2VZUyp9vQT">Builtin superheroes</a> by David Beazley</li>
+</ul>
+
+      <hr>
+      <blockquote>
+      <p><strong>Credit and terms of reuse:</strong> This manual is based on the excellent
+<a target="_blank" href="https://github.com/lab-carpentry">Lab Carpentry</a>
+blueprints, with material adapted from the
+<a target="_blank" href="http://ivory.idyll.org/lab/">Data Intensive Biology Lab</a>
+and the
+<a target="_blank" href="https://data-exp-lab.github.io/">Data Exploration Lab</a>.
+The manual contents are available under the
+<a target="_blank" href="https://creativecommons.org/licenses/by/4.0">Creative
+Commons Attribution 4.0 International (CC BY 4.0)</a> license.
+</p>
+      </blockquote>
+    </div>
+    <div class="column-nav flow">
+      <nav class="flow" aria-label="Manual">
+          <p class="text-bold font-large">
+            Handbook
+          </p>
+          <ol class="flow">
+                <li><a href="coc.html">Code of conduct</a></li>
+                <li><a href="open-science.html">Open science</a></li>
+                <li><a href="expectations.html">Expectations</a></li>
+                <li><a href="authorship.html">Authorship policy</a></li>
+          </ol>
+          <p class="text-bold font-large">
+            Guides
+          </p>
+          <ol class="flow">
+                <li><a href="join.html">Joining the lab</a></li>
+                <li><a href="getting-started.html">Getting started</a></li>
+                <li><a href="communication.html">Communication</a></li>
+                <li><a href="health.html">Health and well-being</a></li>
+                <li><a href="software.html">Software development</a></li>
+                <li><a href="computing.html">Computer setup</a></li>
+                <li class="active"><a aria-current="page" href="resources.html">Links to resources </a></li>
+          </ol>
+        <div class="extra-space-xs">
+          <a aria-current="page" href="index.html">
+            ← Back to the manual
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="content-wide flow flow-large">
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+          <li>
+            <a class=""  href="../">Home</a>
+          </li>
+          <li>
+            <a class=""  href="../news/">News</a>
+          </li>
+          <li>
+            <a class=""  href="../team/">Team</a>
+          </li>
+          <li>
+            <a class=""  href="../research/">Research</a>
+          </li>
+          <li>
+            <a class="active" aria-current="page" href=".">Manual</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list-inline" role="list">
+        <li><strong>Follow the lab:</strong></li>
+        <li>
+          <a href="https://github.com/compgeolab" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="https://bertha.social/@leouieda" target="_blank">Mastodon</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/uieda" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://zenodo.org/communities/compgeolab" target="_blank">Zenodo</a>
+        </li>
+        <li>
+          <a href="https://www.researchgate.net/lab/Computer-Oriented-Geoscience-Lab-Leonardo-Uieda" target="_blank">ResearchGate</a>
+        </li>
+      </ul>
+      <div class="font-small">
+        <p class="text-bold">
+          Departamento de Geofísica
+          —
+          Instituto de Astronomia, Geofísica e Ciências Atmosféricas
+          —
+          Universidade de São Paulo
+          —
+          Brasil
+        </p>
+        <p>
+          Last updated on 24 February 2026.
+          Built with <a href="https://nene.leouieda.com">Nēnē</a> v0.9.0
+          from source code at
+          <a href="https://github.com/compgeolab/website">compgeolab/website</a>
+          (<a href="https://github.com/compgeolab/website/commit/4d42338">4d42338</a>).
+        </p>
+        <p>
+          Copyright &copy; 2026 Leonardo Uieda.
+          Except where otherwise noted, all content is licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

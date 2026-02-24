@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A better method for locating sources of gravity and magnetic anomalies | Computer-Oriented Geoscience Lab</title>
+  <link rel="shortcut icon" href="../images/favicon.png"/>
+
+  <!-- OpenGraph social media card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="A better method for locating sources of gravity and magnetic anomalies | Computer-Oriented Geoscience Lab" />
+  <meta property="og:description" content="We have a new preprint out on EarthArXiv which introduces Euler inversion, a new method for finding the location and approximate geometry of sources of gravity and magnetic anomalies. We’re very..." />
+  <meta property="og:image" content="https://www.compgeolab.org/images/thumbnail.jpg" />
+  <meta property="og:url" content="https://www.compgeolab.org/news/euler-inversion-preprint.html" />
+
+  <!-- Atkinson Hyperlegible fonts -->
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-next/font.css" />
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-mono/font.css" />
+
+  <!-- Andy Bell's CSS reset -->
+  <link rel="stylesheet" href="../css/reset.css" />
+
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Plausible analytics for anonymous usage statistics -->
+  <script defer data-domain="compgeolab.org" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="spread content-wide">
+      <a href="../index.html">
+        <img src="../images/compgeolab-banner.svg" alt="Computer-Oriented Geoscience Lab">
+      </a>
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+            <li>
+              <a class=""  href="../">Home</a>
+            </li>
+            <li>
+              <a class="active" aria-current="page" href=".">News</a>
+            </li>
+            <li>
+              <a class=""  href="../team/">Team</a>
+            </li>
+            <li>
+              <a class=""  href="../research/">Research</a>
+            </li>
+            <li>
+              <a class=""  href="../manual/">Manual</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flow">
+    <div class="content flow extra-space">
+  <article class="flow">
+    <h1>A better method for locating sources of gravity and magnetic anomalies</h1>
+    <p class="text-muted">
+      Published on 2024/12/20 by Leonardo Uieda.
+    </p>
+    <p>We have a new <a href="https://doi.org/10.31223/X5T41M">preprint out on EarthArXiv</a>
+which introduces <strong>Euler inversion</strong>, a new method for finding the location and
+approximate geometry of sources of gravity and magnetic anomalies.</p>
+<p>We’re very excited about Euler inversion because it’s a significant departure
+from existing methods based on Euler’s homogeneity equation (mainly Euler
+deconvolution and its many many variants). It’s a brand new mathematical
+formulation which solves many of the existing issues Euler-based methods,
+mainly: high sensitivity to noise and interfering sources and the dependence on
+knowledge of the structural index of the sources.
+This opens a new research field for us as we continue to improve it further and
+to explore the capabilities of Euler inversion in difference scenarios!</p>
+<div class="callout">
+<p><strong>Open science:</strong>
+As always, all of the source code and data needed to reproduce our results are
+in the GitHub repository
+<a href="https://github.com/compgeolab/euler-inversion">compgeolab/euler-inversion</a>
+and archived on figshare at
+doi:<a href="https://doi.org/10.6084/m9.figshare.26384140">10.6084/m9.figshare.26384140</a>.
+We’ll soon have a version of Euler inversion implemented in the Python library
+<a href="https://www.fatiando.org/harmonica/latest/">Harmonica</a> as well.</p>
+</div>
+<p>Here’s a sneak peek at our main result from applying Euler inversion to an
+aeromagnetic dataset from Rio de Janeiro, Brazil:</p>
+<figure>
+  <img src="../images/news/euler-inversion-preprint.jpg" alt="Map with red-white-blue colored dots representing the magnetic anomaly. There are several dipolar looking anomalies and some linear anomalies in the NE-SW direction. Overlaid are small triangles, circles, and squares which follow the dipolar and linear anomalies.">
+  <figcaption>Results of applying Euler inversion with a window size of 12 000 m and a window step of 2400 m to the aeromagnetic data from Rio de Janeiro, Brazil. Estimated source locations and structural indices obtained from Euler inversion are shown as triangles (𝜂 = 1), squares (𝜂 = 2), and circles (𝜂 = 3). The colour of each symbol represents the estimated depth below the surface of the Earth (topography). Also shown are the total-field anomaly flight-line data, the contours of the post-collisional magmatism and alkaline intrusions (solid black lines) and dykes (dashed lines). The purple squares highlight the A, B, C, and D anomalies that are discussed in the text.</figcaption>
+</figure>
+<p>The main idea for this paper came about during an potential-field methods class
+which I took in 2012 with my then PhD supervisor <a href="https://www.pinga-lab.org/people/barbosa.html">Valéria C. F.
+Barbosa</a>.
+While learning about the Euler deconvolution method, which is a speciality of
+Valéria, I connected it with the geodetic network adjustment theory that I had
+been taught by <a href="https://www.yorku.ca/spiros/spiros.html">Spiros Pagiatakis</a>
+during an exchange program at York University, Canada, in 2008. An initial
+prototype was developed in 2012 but there were still some rough edges and the
+project was shelved to make way for other more urgent projects at the time.
+I returned to this every few years, making slow progress, and involving
+<a href="https://www.pinga-lab.org/people/oliveira-jr.html">Vanderlei C. Oliveira Jr.</a>
+in the planning and discussion of the theory.
+In 2024, lab members <a href="../team/#Souza-junior">Gelson</a> and
+<a href="../team/#indiauppal">India</a> joined me and Vanderlei for a sprint to finish the
+method and produce this paper.</p>
+<p>Here’s the full reference for the preprint:</p>
+<blockquote>
+<p>Uieda, L., Souza-Junior, G. F., Uppal, I., Oliveira Jr., V. C. (2024). Euler
+inversion: Locating sources of potential-field data through inversion of
+Euler’s homogeneity equation. EarthArXiv.
+doi:<a href="https://doi.org/10.31223/X5T41M">10.31223/X5T41M</a>.</p>
+</blockquote>
+<p>We have submitted this to the Geophysical Journal International and are waiting
+for their reviews. Hopefully everything will work out and we’ll get a nice
+surprise in the new year when a decision comes back from the editor!</p>
+<p><strong>If you have any feedback or would like to use the method</strong>, please let us
+know!</p>
+<h2 id="abstract">Abstract</h2>
+<p>Earth scientists can estimate the depth of certain rocks beneath Earth’s
+surface by measuring the small disturbances that they cause in the Earth’s
+gravity and magnetic fields. A popular method for this is <strong>Euler
+deconvolution</strong>, which is widely available in geoscience software and can be
+run quickly on a standard computer. Unfortunately, Euler deconvolution has some
+shortcomings: 1) the approximate shape of the rocks must be known, for example,
+a sphere or a wide flat slab, represented by the <strong>structural index</strong> 2) the
+depth of the rocks is not well estimated when there is noise in our data, which
+is a common occurrence. We propose a new method, <strong>Euler inversion</strong>, which
+fixes some of the shortcomings of Euler deconvolution by using more adequate
+(and complex) mathematics. Our method is less sensitive to noise in the data
+and is also able to determine the approximate shape of the source (the
+structural index). Euler inversion is also fast to execute on a standard
+computer, making it a practical alternative to Euler deconvolution on an Earth
+scientists toolbox.</p>
+
+    <p class="text-right">
+      <a href="index.html">
+        ← Back to news and lab updates
+      </a>
+    </p>
+  </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="content-wide flow flow-large">
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+          <li>
+            <a class=""  href="../">Home</a>
+          </li>
+          <li>
+            <a class="active" aria-current="page" href=".">News</a>
+          </li>
+          <li>
+            <a class=""  href="../team/">Team</a>
+          </li>
+          <li>
+            <a class=""  href="../research/">Research</a>
+          </li>
+          <li>
+            <a class=""  href="../manual/">Manual</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list-inline" role="list">
+        <li><strong>Follow the lab:</strong></li>
+        <li>
+          <a href="https://github.com/compgeolab" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="https://bertha.social/@leouieda" target="_blank">Mastodon</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/uieda" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://zenodo.org/communities/compgeolab" target="_blank">Zenodo</a>
+        </li>
+        <li>
+          <a href="https://www.researchgate.net/lab/Computer-Oriented-Geoscience-Lab-Leonardo-Uieda" target="_blank">ResearchGate</a>
+        </li>
+      </ul>
+      <div class="font-small">
+        <p class="text-bold">
+          Departamento de Geofísica
+          —
+          Instituto de Astronomia, Geofísica e Ciências Atmosféricas
+          —
+          Universidade de São Paulo
+          —
+          Brasil
+        </p>
+        <p>
+          Last updated on 24 February 2026.
+          Built with <a href="https://nene.leouieda.com">Nēnē</a> v0.9.0
+          from source code at
+          <a href="https://github.com/compgeolab/website">compgeolab/website</a>
+          (<a href="https://github.com/compgeolab/website/commit/4d42338">4d42338</a>).
+        </p>
+        <p>
+          Copyright &copy; 2026 Leonardo Uieda.
+          Except where otherwise noted, all content is licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

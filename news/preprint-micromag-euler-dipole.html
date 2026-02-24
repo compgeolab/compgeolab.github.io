@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preprint: Automatic dipole moment inversion of magnetic microscopy images | Computer-Oriented Geoscience Lab</title>
+  <link rel="shortcut icon" href="../images/favicon.png"/>
+
+  <!-- OpenGraph social media card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Preprint: Automatic dipole moment inversion of magnetic microscopy images | Computer-Oriented Geoscience Lab" />
+  <meta property="og:description" content="We have a new preprint out on EarthArXiv: Souza Junior, G.F., Uieda, L., Trindade, R.I.F., Carmo, J., and Fu, R. (2023). Full vector inversion of magnetic microscopy images using Euler..." />
+  <meta property="og:image" content="https://www.compgeolab.org/images/thumbnail.jpg" />
+  <meta property="og:url" content="https://www.compgeolab.org/news/preprint-micromag-euler-dipole.html" />
+
+  <!-- Atkinson Hyperlegible fonts -->
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-next/font.css" />
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-mono/font.css" />
+
+  <!-- Andy Bell's CSS reset -->
+  <link rel="stylesheet" href="../css/reset.css" />
+
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Plausible analytics for anonymous usage statistics -->
+  <script defer data-domain="compgeolab.org" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="spread content-wide">
+      <a href="../index.html">
+        <img src="../images/compgeolab-banner.svg" alt="Computer-Oriented Geoscience Lab">
+      </a>
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+            <li>
+              <a class=""  href="../">Home</a>
+            </li>
+            <li>
+              <a class="active" aria-current="page" href=".">News</a>
+            </li>
+            <li>
+              <a class=""  href="../team/">Team</a>
+            </li>
+            <li>
+              <a class=""  href="../research/">Research</a>
+            </li>
+            <li>
+              <a class=""  href="../manual/">Manual</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flow">
+    <div class="content flow extra-space">
+  <article class="flow">
+    <h1>Preprint: Automatic dipole moment inversion of magnetic microscopy images</h1>
+    <p class="text-muted">
+      Published on 2023/06/14 by Leonardo Uieda.
+    </p>
+    <p>We have a new preprint out on <a href="https://eartharxiv.org/">EarthArXiv</a>:</p>
+<blockquote>
+<p>Souza Junior, G.F., Uieda, L., Trindade, R.I.F., Carmo, J., and Fu, R.
+(2023). Full vector inversion of magnetic microscopy images using Euler
+deconvolution as a priori information. EarthArXiv.
+doi:<a href="https://doi.org/10.31223/x5qd5z">10.31223/x5qd5z</a></p>
+</blockquote>
+<p>This is the first publication produced as part of lab member
+<a href="../team#Souza-junior">Gelson F. Souza Junior</a>’s PhD research
+and our <a href="rsoc-mag-microscopy-2022.html">Royal Society grant</a>.
+It presents a new method to automatically identify the signal from individual
+magnetic particles in magnetic microscopy images and linearly invert the data
+in 2 steps to determine the position and dipole moment of each particle.
+The idea for this work came from combining the group’s expertise in applied
+geophysics and paleomagnetism.</p>
+<p>The proof-of-concept code that implements the method is available on the
+GitHub repository <a href="https://github.com/compgeolab/micromag-euler-dipole">compgeolab/micromag-euler-dipole</a>.
+A more user-friendly version will be implemented in the open-source library
+<a href="https://github.com/compgeolab/magali">Magali</a>, which is under construction.</p>
+  <figure>
+    <img src="../images/news/micromag-euler-dipole-example-result.jpg" alt="A grayscale map showing several dipolar anomalies of different sizes with colored vectors overlaid showing the estimated dipole moments" style="">
+    <figcaption>Example result of our dipole moment inversion overlaid on magnetic microscopy data from a QDM.</figcaption>
+  </figure>
+    <p class="text-right">
+      <a href="index.html">
+        ← Back to news and lab updates
+      </a>
+    </p>
+  </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="content-wide flow flow-large">
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+          <li>
+            <a class=""  href="../">Home</a>
+          </li>
+          <li>
+            <a class="active" aria-current="page" href=".">News</a>
+          </li>
+          <li>
+            <a class=""  href="../team/">Team</a>
+          </li>
+          <li>
+            <a class=""  href="../research/">Research</a>
+          </li>
+          <li>
+            <a class=""  href="../manual/">Manual</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list-inline" role="list">
+        <li><strong>Follow the lab:</strong></li>
+        <li>
+          <a href="https://github.com/compgeolab" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="https://bertha.social/@leouieda" target="_blank">Mastodon</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/uieda" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://zenodo.org/communities/compgeolab" target="_blank">Zenodo</a>
+        </li>
+        <li>
+          <a href="https://www.researchgate.net/lab/Computer-Oriented-Geoscience-Lab-Leonardo-Uieda" target="_blank">ResearchGate</a>
+        </li>
+      </ul>
+      <div class="font-small">
+        <p class="text-bold">
+          Departamento de Geofísica
+          —
+          Instituto de Astronomia, Geofísica e Ciências Atmosféricas
+          —
+          Universidade de São Paulo
+          —
+          Brasil
+        </p>
+        <p>
+          Last updated on 24 February 2026.
+          Built with <a href="https://nene.leouieda.com">Nēnē</a> v0.9.0
+          from source code at
+          <a href="https://github.com/compgeolab/website">compgeolab/website</a>
+          (<a href="https://github.com/compgeolab/website/commit/4d42338">4d42338</a>).
+        </p>
+        <p>
+          Copyright &copy; 2026 Leonardo Uieda.
+          Except where otherwise noted, all content is licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A new equivalent sources approach for magnetic data | Computer-Oriented Geoscience Lab</title>
+  <link rel="shortcut icon" href="../images/favicon.png"/>
+
+  <!-- OpenGraph social media card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="A new equivalent sources approach for magnetic data | Computer-Oriented Geoscience Lab" />
+  <meta property="og:description" content="Our new paper has been published in Geophysical Journal International! 🎉 It introduces Dual-Layer Magnetic Equivalent Sources, a new adaptation of the equivalent source technique for gridding..." />
+  <meta property="og:image" content="https://www.compgeolab.org/images/thumbnail.jpg" />
+  <meta property="og:url" content="https://www.compgeolab.org/news/eqs-magnetic-dual-layer-paper.html" />
+
+  <!-- Atkinson Hyperlegible fonts -->
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-next/font.css" />
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-mono/font.css" />
+
+  <!-- Andy Bell's CSS reset -->
+  <link rel="stylesheet" href="../css/reset.css" />
+
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Plausible analytics for anonymous usage statistics -->
+  <script defer data-domain="compgeolab.org" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="spread content-wide">
+      <a href="../index.html">
+        <img src="../images/compgeolab-banner.svg" alt="Computer-Oriented Geoscience Lab">
+      </a>
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+            <li>
+              <a class=""  href="../">Home</a>
+            </li>
+            <li>
+              <a class="active" aria-current="page" href=".">News</a>
+            </li>
+            <li>
+              <a class=""  href="../team/">Team</a>
+            </li>
+            <li>
+              <a class=""  href="../research/">Research</a>
+            </li>
+            <li>
+              <a class=""  href="../manual/">Manual</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flow">
+    <div class="content flow extra-space">
+  <article class="flow">
+    <h1>A new equivalent sources approach for magnetic data</h1>
+    <p class="text-muted">
+      Published on 2025/09/23 by India Uppal.
+    </p>
+    <p>Our new <a href="https://doi.org/10.1093/gji/ggaf359">paper</a> has been published in
+Geophysical Journal International! 🎉 It introduces <strong>Dual-Layer Magnetic
+Equivalent Sources</strong>, a new adaptation of the equivalent source technique for
+gridding magnetic data.</p>
+<blockquote>
+<p>Uppal, I., Uieda, L., Oliveira Jr., V. C., Holme, R. (2025). Dual-Layer
+Gradient-Boosted Equivalent Sources for Magnetic Data. <em>Geophysical Journal
+International</em>.
+doi:<a href="https://doi.org/10.1093/gji/ggaf359">10.1093/gji/ggaf359</a></p>
+</blockquote>
+<p>We’re excited about this method because it addresses some of the limitations
+current adaptions of the equivalent source technique still have. This
+dual-layer approach enhances the computational efficiency and improves the
+predictions compared to a single layer approach when predicting both short-
+and long-wavelength signals, particularly in the presence of truncated
+long-wavelength anomalies. The method can also be used to fit total field
+anomaly data and then predict the three components of the anomalous magnetic
+field, as well as the amplitude of the anomalous magnetic field.</p>
+<div class="callout">
+<p><strong>Open science:</strong>
+As always, all of the source code and data needed to reproduce our results are
+openly available and can be accessed via the:</p>
+<ul>
+<li>Github repository: <a href="https://github.com/compgeolab/eqs-magnetic-dual-layer">compgeolab/eqs-magnetic-dual-layer</a></li>
+<li>Zendodo archive: <a href="https://doi.org/10.5281/zenodo.15120457">10.5281/zenodo.15120457</a></li>
+</ul>
+<p>We’ll also be implementing a version of the dual-layer magnetic equivalent
+sources in the Python library <a href="https://www.fatiando.org/harmonica/latest/">Harmonica</a> as well.</p>
+</div>
+<p>Here’s a sneak peek of one of our main results from applying dual-layer
+magnetic equivalent sources to an aeromagnetic dataset from Antarctica:</p>
+<figure>
+  <img src="../images/news/eqs-magnetic-dual-layer-paper.png" alt="A gridded map of the ICEGRAV aeromagnetic dataset with the flight lines overlaid in white.">
+  <figcaption> The real data predictions on a regular grid using the dual-layer magnetic equivalent sources approach. The prediction of the total-field anomaly (a) and amplitude of the anomalous magnetic field (b) of the ICEGRAV survey (Ferraccioli et al., 2020) on a regular grid with 5km spacing. The survey lines are overlaid in white.</figcaption>
+</figure>
+<p>This work is part of <a href="../team/#indiauppal">my</a> PhD thesis, motivated by our goal to improve the quality of existing Antarctic magnetic data products. Existing methods are often not ideal for stitching together such complex surveys and we saw equivalent sources as a promising way forward. With this paper, the results serve as the basis for further exploration into the challenging Antarctic magnetic datasets. This paper was completed with the help of my supervisors, <a href="../team/#leouieda">Leo Uieda</a>, <a href="https://www.pinga-lab.org/people/oliveira-jr.html">Vanderlei C. Oliveira Jr.</a> and <a href="https://www.liverpool.ac.uk/people/richard-holme">Richard Holme</a>.</p>
+<h2 id="abstract">Abstract</h2>
+<p>Magnetic data often require interpolation onto a regular grid at constant
+height before further analysis. A widely used approach for this is the
+equivalent sources technique, which has been adapted over time to improve its
+computational efficiency and accuracy of the predictions. However, many of
+these adaptations still face challenges, including border effects in the
+predictions or reliance on a stabilising parameter. To address these
+limitations, we introduce dual-layer gradient-boosted equivalent sources to:
+(1) use a dual-layer approach to improve the predictions of both short- and
+long-wavelength signals, as well as, reduce border effect; (2) use
+block-averaging and the gradient-boosted equivalent sources method to reduce
+the computational load; (3) apply block K-fold cross-validation to guide
+optimal parameter selection for the model. The proposed method was tested on
+both synthetic datasets and the ICEGRAV aeromagnetic dataset to evaluate the
+methods ability to interpolate and upward continue onto a regular grid, as
+well as predict the amplitude of the anomalous field from total-field anomaly
+data. The dual-layer approach proved better compared to the single-layer
+approach when predicting both short- and long-wavelength signals, particularly
+in the presence of truncated long-wavelength anomalies. The use of
+block-averaging and the gradient-boosting method enhances the computational
+efficiency, being able to grid over 400,000 data points in under 2 minutes on
+a moderate workstation computer.</p>
+
+    <p class="text-right">
+      <a href="index.html">
+        ← Back to news and lab updates
+      </a>
+    </p>
+  </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="content-wide flow flow-large">
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+          <li>
+            <a class=""  href="../">Home</a>
+          </li>
+          <li>
+            <a class="active" aria-current="page" href=".">News</a>
+          </li>
+          <li>
+            <a class=""  href="../team/">Team</a>
+          </li>
+          <li>
+            <a class=""  href="../research/">Research</a>
+          </li>
+          <li>
+            <a class=""  href="../manual/">Manual</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list-inline" role="list">
+        <li><strong>Follow the lab:</strong></li>
+        <li>
+          <a href="https://github.com/compgeolab" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="https://bertha.social/@leouieda" target="_blank">Mastodon</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/uieda" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://zenodo.org/communities/compgeolab" target="_blank">Zenodo</a>
+        </li>
+        <li>
+          <a href="https://www.researchgate.net/lab/Computer-Oriented-Geoscience-Lab-Leonardo-Uieda" target="_blank">ResearchGate</a>
+        </li>
+      </ul>
+      <div class="font-small">
+        <p class="text-bold">
+          Departamento de Geofísica
+          —
+          Instituto de Astronomia, Geofísica e Ciências Atmosféricas
+          —
+          Universidade de São Paulo
+          —
+          Brasil
+        </p>
+        <p>
+          Last updated on 24 February 2026.
+          Built with <a href="https://nene.leouieda.com">Nēnē</a> v0.9.0
+          from source code at
+          <a href="https://github.com/compgeolab/website">compgeolab/website</a>
+          (<a href="https://github.com/compgeolab/website/commit/4d42338">4d42338</a>).
+        </p>
+        <p>
+          Copyright &copy; 2026 Leonardo Uieda.
+          Except where otherwise noted, all content is licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
