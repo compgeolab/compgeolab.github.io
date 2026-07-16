@@ -1,0 +1,552 @@
+/* Typography and colors for main elements */
+/*****************************************************************************/
+:root {
+  /* Colors */
+  --color-dark: #15204a;
+  --color-medium: #b7bcc3;
+  --color-lightish: #edf4ff;
+  --color-light: #fff7f7;
+  --color-primary: #236ad5;
+  --color-secondary: #ffaaaa;
+  --color-muted: #4b6b9b;
+  --color-extramuted: #4b6b9b55;
+
+  /* Type scale calculated using https://utopia.fyi/type/calculator */
+  --size--1: clamp(0.94rem, calc(0.90rem + 0.18vw), 1.04rem);
+  --size-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  --size-1: clamp(1.41rem, calc(1.35rem + 0.27vw), 1.56rem);
+  --size-2: clamp(1.76rem, calc(1.69rem + 0.34vw), 1.95rem);
+  --size-3: clamp(2.20rem, calc(2.11rem + 0.42vw), 2.44rem);
+  --size-4: clamp(2.75rem, calc(2.64rem + 0.53vw), 3.05rem);
+  --size-5: clamp(3.43rem, calc(3.30rem + 0.66vw), 3.82rem);
+
+  /* Space scale calculated using https://utopia.fyi/space/calculator/ */
+  --space-3xs: clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
+  --space-2xs: clamp(0.56rem, calc(0.54rem + 0.10vw), 0.63rem);
+  --space-xs: clamp(0.88rem, calc(0.85rem + 0.10vw), 0.94rem);
+  --space-s: clamp(1.13rem, calc(1.08rem + 0.21vw), 1.25rem);
+  --space-m: clamp(1.69rem, calc(1.63rem + 0.31vw), 1.88rem);
+  --space-l: clamp(2.25rem, calc(2.17rem + 0.42vw), 2.50rem);
+  --space-xl: clamp(3.38rem, calc(3.25rem + 0.63vw), 3.75rem);
+  --space-2xl: clamp(4.50rem, calc(4.33rem + 0.83vw), 5.00rem);
+  --space-3xl: clamp(6.75rem, calc(6.50rem + 1.25vw), 7.50rem);
+  --space-4xl: clamp(10.13rem, calc(9.75rem + 1.88vw), 11.25rem);
+  --space-5xl: clamp(15.75rem, calc(15.1413rem + 3.0435vw), 17.5rem);
+
+  /* Spaces and other sizes */
+  --gutter: var(--space-xs);
+  --block-border: 0.35em;
+}
+
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  font-size: var(--size-0);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--color-muted);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--size-4);
+}
+
+h2 {
+  font-size: var(--size-3);
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+h3 {
+  font-size: var(--size-1);
+}
+
+hr {
+  height: 3px;
+  background-color: var(--color-extramuted);
+  opacity: 1;
+  border: none;
+  margin-bottom: 3em;
+  --flow-space: 3em;
+}
+
+code {
+  font-family: "Atkinson Hyperlegible Mono", monospace;
+  background-color: var(--color-lightish);
+  padding: .2em .3em;
+  border-radius: 6px;
+}
+
+pre {
+  width: 100%;
+  background-color: var(--color-lightish);
+  border-radius: 0.25em;
+  overflow: auto;
+  display: block;
+  padding: var(--gutter);
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+}
+
+header, footer {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  color: var(--color-light);
+}
+
+header {
+  padding: var(--gutter);
+}
+
+header img {
+  height: 40px;
+  width: auto;
+}
+
+footer {
+  padding: var(--space-xl) var(--gutter);
+  margin-top: var(--space-3xl);
+  line-height: 2;
+}
+
+footer a {
+  color: var(--color-light);
+}
+
+footer a:hover {
+  color: var(--color-medium);
+}
+
+nav a {
+  color: var(--color-light);
+  border-bottom: none;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--color-light);
+  border-bottom: none;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-light);
+}
+
+nav a::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--color-light);
+  transition: transform 0.2s ease-in-out;
+  transform: scale(0);
+}
+
+nav a:hover::after {
+  transform: scale(1);
+}
+
+nav a.active:hover::after {
+  transform: scale(0);
+}
+
+figure > img {
+  box-shadow: 0px 0px 10px 1px var(--color-extramuted);
+}
+
+figcaption {
+  font-size: var(--size--1);
+  color: var(--color-muted);
+  text-align: center;
+}
+
+figcaption a {
+  color: var(--color-muted);
+}
+
+figcaption a:hover {
+  color: var(--color-primary);
+}
+
+img {
+  width: 100%;
+}
+
+blockquote {
+  border-left: var(--block-border) solid var(--color-muted);
+  color: var(--color-muted);
+  padding: var(--gutter);
+}
+
+
+/* Flow and rythm */
+/*****************************************************************************/
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+:is(h1, h2, h3, figure) {
+  --flow-space: 1.5em;
+}
+
+/* Flow elements inside these containers automatically */
+blockquote > * + *, figure > * + *, .callout > * + * {
+  margin-block-start: 0.5em;
+}
+
+
+/* Blocks */
+/*****************************************************************************/
+.content {
+  max-width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.content-wide {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner {
+  width: 100%;
+  background-size: cover;
+  background-position: center right;
+  box-shadow:
+    inset 0px 30px 15px -15px rgba(0, 0, 0, 0.30),
+    inset 0px -30px 15px -15px rgba(0, 0, 0, 0.30);
+  padding: var(--space-4xl) 0;
+  color: var(--color-light);
+  line-height: 1.25;
+  --flow-space: 2em;
+}
+
+.banner a {
+  color: var(--color-light);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-light);
+}
+
+.banner a:hover {
+  color: var(--color-medium);
+  border-bottom: 2px solid var(--color-medium);
+}
+
+.callout {
+  background-color: var(--color-lightish);
+  border-left: var(--block-border) solid var(--color-primary);
+  padding: var(--gutter);
+}
+
+.lead {
+  font-size: var(--size-1);
+  color: var(--color-muted);
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gutter) var(--space-m);
+  --flow-space: 2em;
+}
+
+.profile > img {
+  flex: 1;
+  order: 1;
+  min-width: 125px;
+  border-radius: 3%;
+  box-shadow: 0px 0px 15px -5px var(--color-dark);
+  margin-top: var(--gutter);
+  margin-bottom: var(--gutter);
+}
+
+.profile-info {
+  flex: 3;
+  order: 2;
+  min-width: 30ch;
+  line-height: 1.5;
+  --flow-space: 0.5em;
+}
+
+.column-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: flex-start;
+  gap: var(--space-l) var(--space-m);
+}
+
+.column-body {
+  flex: 3;
+  min-width: 70%;
+}
+
+.column-body > nav a {
+  color: var(--color-primary);
+}
+
+.column-body > nav a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.column-nav {
+  flex: 1;
+  min-width: 18ch;
+  height: 100%;
+  padding-left: var(--gutter);
+  border-left: 2px solid var(--color-extramuted);
+  --flow-space: 0.75em;
+  position: sticky;
+  top: 0;
+}
+
+.column-nav a {
+  color: var(--color-muted);
+}
+
+.column-nav a:hover {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.column-nav ol {
+  padding-left: 0;
+}
+
+.column-nav li {
+  list-style-position: inside;
+  padding-left: var(--space-3xs);
+  border-left: 3px solid transparent;
+  line-height: 1.2;
+}
+
+.column-nav li::marker {
+  color: var(--color-muted);
+}
+
+.column-nav li:hover {
+  border-left: 3px solid var(--color-secondary);
+}
+
+.column-nav li:hover::marker {
+  color: var(--color-dark);
+}
+
+.column-nav li.active {
+  border-left: 3px solid var(--color-secondary);
+}
+
+.column-nav li.active > a{
+  color: var(--color-dark);
+}
+
+.column-nav li.active::marker {
+  color: var(--color-dark);
+}
+
+
+/* Utilities */
+/*****************************************************************************/
+.list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gutter);
+  line-height: 1;
+  padding-left: 0;
+}
+
+.spread {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gutter);
+}
+
+
+/* Utilities */
+/*****************************************************************************/
+.flow-large {
+  --flow-space: 2.5em;
+}
+
+.extra-space {
+  margin-top: var(--space-2xl);
+}
+
+.extra-space-xl {
+  margin-top: var(--space-3xl);
+}
+
+.extra-space-xs {
+  margin-top: var(--space-l);
+}
+
+.font-small {
+  font-size: var(--size--1);
+}
+
+.font-normal {
+  font-size: var(--size-0);
+}
+
+.font-large {
+  font-size: var(--size-1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-muted a {
+  color: var(--color-muted);
+}
+
+.text-muted a:hover {
+  color: var(--color-primary);
+}
+
+
+/* Create thumbnail for youtube videos */
+/* ----------------------------------- */
+
+.ratio {
+  position: relative;
+  width: 100%;
+}
+.ratio::before {
+  display: block;
+  padding-top: var(--bs-aspect-ratio);
+  content: "";
+}
+.ratio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ratio-1x1 {
+  --bs-aspect-ratio: 100%;
+}
+
+.ratio-4x3 {
+  --bs-aspect-ratio: 75%;
+}
+
+.ratio-16x9 {
+  --bs-aspect-ratio: 56.25%;
+}
+
+.ratio-21x9 {
+  --bs-aspect-ratio: 42.8571428571%;
+}
+
+.yt {
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.yt a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.yt a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.play-button {
+  width: 68px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -34px;
+  margin-top: -32px;
+  background-color: rgba(23, 23, 23, 0.8);
+  border-radius: 10px;
+  display: flex;
+}
+
+.play-button:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.play-button img {
+  width: 25%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.watch-on-yt {
+  background-color: rgba(23, 23, 23, 0.8);
+  position: absolute;
+  left: 0px;
+  top: auto;
+  bottom: 5px;
+  height: 48px;
+  width: auto;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--size-0);
+  line-height: var(--size-0);
+}
+
+.watch-on-yt img {
+  height: var(--size-0);
+  width: auto;
+  margin-left: 0.5rem;
+  padding-bottom: 1px;
+}
+/* ----------------------------------- */
