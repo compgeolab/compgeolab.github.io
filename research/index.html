@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our research themes | Computer-Oriented Geoscience Lab</title>
+  <link rel="shortcut icon" href="../images/favicon.png"/>
+
+  <!-- OpenGraph social media card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Our research themes | Computer-Oriented Geoscience Lab" />
+  <meta property="og:description" content="We focus our efforts on creating and applying new methods for solving inverse problems in geophysics applied to 3D modeling and data processing, mostly for gravimetry and magnetometry (AKA..." />
+  <meta property="og:image" content="https://www.compgeolab.org/images/thumbnail.jpg" />
+  <meta property="og:url" content="https://www.compgeolab.org/research/index.html" />
+
+  <!-- Mastodon author attribution -->
+  <!-- https://blog.joinmastodon.org/2024/07/highlighting-journalism-on-mastodon/ -->
+  <meta name="fediverse:creator" content="@leouieda@bertha.social">
+
+  <!-- Atkinson Hyperlegible fonts -->
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-next/font.css" />
+  <link rel="stylesheet" href="../pkg/atkinson-hyperlegible-mono/font.css" />
+
+  <!-- Andy Bell's CSS reset -->
+  <link rel="stylesheet" href="../css/reset.css" />
+
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Plausible analytics for anonymous usage statistics -->
+  <script defer data-domain="compgeolab.org" src="https://plausible.io/js/plausible.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="spread content-wide">
+      <a href="../index.html">
+        <img src="../images/compgeolab-banner.svg" alt="Computer-Oriented Geoscience Lab">
+      </a>
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+            <li>
+              <a class=""  href="../">Home</a>
+            </li>
+            <li>
+              <a class=""  href="../news/">News</a>
+            </li>
+            <li>
+              <a class=""  href="../team/">Team</a>
+            </li>
+            <li>
+              <a class="active" aria-current="page" href=".">Research</a>
+            </li>
+            <li>
+              <a class=""  href="../publications/">Publications</a>
+            </li>
+            <li>
+              <a class=""  href="../manual/">Manual</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flow">
+    <div class="content flow extra-space">
+          <h1>Our research themes</h1>
+          <div class="lead">
+<p>We focus our efforts on creating and applying new methods for solving <strong>inverse
+problems in geophysics</strong> applied to <strong>3D modeling and data processing</strong>, mostly
+for gravimetry and magnetometry (AKA <strong>potential-field methods</strong>). Below, you’ll
+find the main research themes that we pursue.</p>
+</div>
+<section class="extra-space flow">
+<h2 id="integration">Data integration and interpolation</h2>
+<p>Geoscientists have been dealing with problems of integrating and interpolating unevenly distributed data for decades. Many of our approaches have similarities with <strong>machine learning</strong> problems. For example the <strong>equivalent sources technique</strong> (used in gravity and magnetics) and <strong>spline interpolation</strong> are basically supervised-learning methods. Given the many similarities, it makes sense to apply and adapt machine learning techniques and best-practices to these geophysical problems.</p>
+<p>At the lab, we are employing machine-learning methods like <strong>ensemble techniques</strong> and <strong>cross-validation</strong> to overcome key computational challenges in equivalent-source methods and data interpolation (AKA gridding).</p>
+  <figure>
+    <img src="../images/research/integration.webp" alt="Two maps side by side of the area, with coastlines visible on the upper part, the left map showing red-white-blue dots scattered throughout the continental part, the right map showing a continuous red-white-blue distribution of colors." style="">
+    <figcaption>Results from our interpolation of millions of <a href="https://github.com/compgeolab/australia-gravity-data">ground gravity data from Australia</a> to a uniform height using gradient-boosted equivalent sources (<a href="https://doi.org/10.1093/gji/ggab297">Soler and Ueida, 2021</a>). <strong>Left:</strong> Section of the ground measurements of gravity disturbance (red means positive and blue means negative) from several surveys with different spacings and distributions. <strong>Right:</strong> Same section of the interpolated grid at a uniform height, which is able to retain the high resolution of the denser surveys while filling in the gaps in the data.</figcaption>
+  </figure>
+<div class="callout">
+<p>Examples of our work on this theme:</p>
+<ul>
+<li>
+<p><a href="../publications#10.1029/2026JB034259">Magnetic dual-layer equivalent sources on the sphere</a></p>
+</li>
+<li>
+<p><a href="../publications#10.1093/gji/ggaf359">Dual-layer gradient-boosted equivalent sources for magnetic data</a></p>
+</li>
+</ul>
+</ul>
+</div>
+</section>
+<section class="extra-space flow">
+<h2 id="microscopy">Magnetic microscopy</h2>
+<p>The magnetization that gets locked in some minerals (known as <a href="https://en.wikipedia.org/wiki/Ferromagnetism"><em>ferromagnetic minerals</em></a>) at the time of their formation is one of a few gateways we have into the <strong>Earth’s distant past</strong>. So far, researchers have mostly only been able to make bulk measurements of magnetization from collected rock samples. Emerging <em>magnetic microscopy</em> technology is now allowing us to image thin-sections and distinguish <strong>the magnetic fields of the individual minerals</strong> that make up the rock sample.</p>
+<p>Our group is collaborating with experts in paleomagnetism to <strong>develop new methods and software for data processing and interpretation</strong>, unlocking the huge potential of these exciting new datasets.</p>
+  <figure>
+    <img src="../images/research/microscopy.webp" alt="To the left, gray scale map showing dark spots and a lighter rectangular section in the middle. To the right, red and blue map showing dipolar anomalies at a scale of 400 micrometers." style="">
+    <figcaption>Example QDM magnetic microscopy data from a basalt sample (<a href="https://doi.org/10.1029/2025JB031725">Souza-Junior et al., 2026</a>), showing tiny magnetic anomalies (on the order of 10-50 µm in size) that are associated with the ferromagnetic minerals found in the rock. The left image shows the optical equivalent of the magnetic data on the right.</figcaption>
+  </figure>
+<div class="callout">
+<p>Examples of our work on this theme:</p>
+<ul>
+<li>
+<p><a href="../publications#10.1029/2025JB031725">Robust directional analysis of magnetic microscopy images using non-linear inversion and iterative Euler deconvolution</a></p>
+</li>
+<li>
+<p><a href="../publications#10.1038/s43247-026-03725-3">Estimating Earth’s past field strength from individual sources in archaeological ceramics using quantum diamond microscopy</a></p>
+</li>
+</ul>
+</ul>
+</div>
+</section>
+<section class="extra-space flow">
+<h2 id="inversion">Subsurface imaging</h2>
+<p>Our ultimate goal as geophysicists is to <strong>understand the inner structure and dynamics of the Earth</strong> from surface observations. This is a tough mathematical and computational problem: it’s an ill-posed <strong>inverse problem</strong>, to which a solution might not exist, not be unique, and not be stable.</p>
+<p>We develop methods to overcome these challenges and solve different kinds of inverse problems that arise in geophysics.</p>
+  <figure>
+    <img src="../images/research/inversion.webp" alt="Map with red and blue colored points along vertical lines and colored triangles, circles and squares highlighting linear and dipolar anomalies" style="">
+    <figcaption>Estimated 3D position and shape of sources from airborne magnetic data using Euler inversion (<a href="https://doi.org/10.1093/gji/ggaf114">Uieda et al., 2025</a>). The structural index corresponds to the shape. A good rule of thumb is: 1 = dikes, 2 = sills, 3 = spheres. Black outlines are the outcropping parts of intrusions.
+</figcaption>
+  </figure>
+<div class="callout">
+<p>Examples of our work on this theme:</p>
+<ul>
+<li><a href="../publications#10.1093/gji/ggaf114">Euler inversion: Locating sources of potential-field data through inversion of Euler’s homogeneity equation</a></li>
+</ul>
+</ul>
+</div>
+</section>
+<section class="extra-space flow">
+<h2 id="software">Free software development</h2>
+<p>Software underpins everything we do as geoscientists. We have a <strong>strong commitment developing free and open-source software</strong> to support not only our own research efforts, but those of <strong>our entire community</strong>. Software development is also a way for us to help <strong>train new generations</strong> on advanced topics and <strong>build human capacity</strong> within geoscience.</p>
+<p>Our group works mostly on <a href="https://www.fatiando.org/">Fatiando a Terra</a>, a collection of Python libraries for geophysics. Leo was also the creator of <a href="https://www.pygmt.org">PyGMT</a> and a core contributor to the <a href="https://www.generic-mapping-tools.org/">Generic Mapping Tools (GMT)</a>.</p>
+  <figure>
+    <img src="../images/research/software.webp" alt="Screenshot of a black screen with colored text (source code) in two columns.h" style="">
+    <figcaption>Source code for the International Geomagnetic Reference Field (IGRF) calculation in the <a href="https://www.fatiando.org/harmonica">Harmonica</a> library of Fatiando a Terra. The code is pure Python with the performance bottlenecks optimized using the <a href="https://numba.pydata.org/">Numba</a> library to achieve close to C speeds.
+</figcaption>
+  </figure>
+<div class="callout">
+<p>Examples of our work on this theme:</p>
+<ul>
+<li>
+<p><a href="../publications#10.1029/2026GC013105">PyGMT: Bridging Python and the Generic Mapping Tools for Geospatial Visualization and Analysis</a></p>
+</li>
+<li>
+<p><a href="../publications#10.21105/joss.01943">Pooch: A friend to fetch your data files</a></p>
+</li>
+</ul>
+</ul>
+</div>
+</section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="content-wide flow flow-large">
+      <nav aria-label="Main">
+        <ul class="list-inline" role="list">
+          <li>
+            <a class=""  href="../">Home</a>
+          </li>
+          <li>
+            <a class=""  href="../news/">News</a>
+          </li>
+          <li>
+            <a class=""  href="../team/">Team</a>
+          </li>
+          <li>
+            <a class="active" aria-current="page" href=".">Research</a>
+          </li>
+          <li>
+            <a class=""  href="../publications/">Publications</a>
+          </li>
+          <li>
+            <a class=""  href="../manual/">Manual</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list-inline" role="list">
+        <li><strong>Follow the lab:</strong></li>
+        <li>
+          <a href="https://github.com/compgeolab" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a rel="me" href="https://bertha.social/@leouieda" target="_blank">Mastodon</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/uieda" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://zenodo.org/communities/compgeolab" target="_blank">Zenodo</a>
+        </li>
+        <li>
+          <a href="https://www.researchgate.net/lab/Computer-Oriented-Geoscience-Lab-Leonardo-Uieda" target="_blank">ResearchGate</a>
+        </li>
+      </ul>
+      <div class="font-small">
+        <p class="text-bold">
+          Departamento de Geofísica
+          —
+          Instituto de Astronomia, Geofísica e Ciências Atmosféricas
+          —
+          Universidade de São Paulo
+          —
+          Brasil
+        </p>
+        <p>
+          Last updated on 25 November 2026.
+          Built with <a href="https://nene.leouieda.com">Nēnē</a> v0.9.0
+          from source code at
+          <a href="https://github.com/compgeolab/website">compgeolab/website</a>
+          (<a href="https://github.com/compgeolab/website/commit/2bf6d26">2bf6d26</a>).
+        </p>
+        <p>
+          Copyright &copy; 2026 Leonardo Uieda.
+          Except where otherwise noted, all content is licensed
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
